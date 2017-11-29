@@ -1,6 +1,5 @@
 .idea/
 .DS_store
-vendor/
 cache/
 node_modules/
 npm-debug.log
