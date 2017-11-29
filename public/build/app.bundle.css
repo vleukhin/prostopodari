@@ -1,25 +1,20 @@
 @font-face {
-  font-family: 'GloberBlack';
-  src: url("/fonts/glober_black-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Phenomena';
-  src: url("/fonts/phenomena-bold-webfont.woff2") format("woff2"), url("/fonts/phenomena-bold-webfont.woff") format("woff"), url("/fonts/phenomena-bold-webfont.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Phenomena';
-  src: url("/fonts/phenomena-extrabold-webfont.woff2") format("woff2"), url("/fonts/phenomena-extrabold-webfont.woff") format("woff"), url("/fonts/phenomena-extrabold-webfont.ttf") format("truetype");
+  font-family: 'gilroy';
+  src: url("/fonts/radomir-tinkov-gilroy-extrabold-webfont.woff2") format("woff2"), url("/fonts/radomir-tinkov-gilroy-extrabold-webfont.woff") format("woff"), url("/fonts/radomir-tinkov-gilroy-extrabold-webfont.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gilroy';
+  src: url("/fonts/radomir-tinkov-gilroy-light-webfont.woff2") format("woff2"), url("/fonts/radomir-tinkov-gilroy-light-webfont.woff") format("woff"), url("/fonts/radomir-tinkov-gilroy-light-webfont.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal; }
 
 /**
  * Partials
  */
 .pp-button {
+  font-family: gilroy, sans-serif;
   font-size: 36px;
   height: 78px;
   text-transform: uppercase;
@@ -27,7 +22,8 @@
   color: #fff;
   background-color: #d20833;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-style: normal; }
   .pp-button_green {
     background-color: #3e974b; }
     .pp-button_green.pp-button_bordered {
@@ -58,8 +54,7 @@ html, body {
   color: #fff;
   height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: Gilroy; }
+  padding: 0; }
 
 .page, .content {
   height: 100%; }

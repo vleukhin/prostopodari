@@ -1,5 +1,6 @@
 .pp-button {
   $block: &;
+  font-family: gilroy, sans-serif;
 
   font-size: 36px;
   height: 78px;
@@ -9,6 +10,7 @@
   background-color: $color_red;
   border: none;
   cursor: pointer;
+  font-style: normal;
 
   &_green {
     background-color: $color_green;
