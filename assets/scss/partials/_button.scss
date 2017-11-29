@@ -1,0 +1,25 @@
+.pp-button {
+  $block: &;
+
+  font-size: 36px;
+  height: 78px;
+  text-transform: uppercase;
+  padding: 0 25px;
+  color: #fff;
+  background-color: $color_red;
+  border: none;
+  cursor: pointer;
+
+  &_green {
+    background-color: $color_green;
+    &.pp-button_bordered {
+      border: 3px solid $color_green;
+      color: $color_green;
+    }
+  }
+
+  &_bordered {
+    background-color: transparent;
+    border: 3px solid #fff;
+  }
+}

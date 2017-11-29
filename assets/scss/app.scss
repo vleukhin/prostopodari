@@ -5,7 +5,7 @@
 /**
  * Partials
  */
-
+@import "partials/button";
 /**
  * Blocks
  */
@@ -16,10 +16,12 @@
 
 
 html, body {
-  background: #000;
+  background: $color_blue;
+  color: #fff;
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Gilroy;
 }
 
 .page, .content {
