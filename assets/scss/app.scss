@@ -1,0 +1,31 @@
+@import "inc/vars";
+@import "inc/adaptive-mixins";
+@import "inc/mixins";
+@import "inc/fonts";
+/**
+ * Partials
+ */
+
+/**
+ * Blocks
+ */
+
+/**
+ * Screens
+ */
+
+
+html, body {
+  background: #000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page, .content {
+  height: 100%;
+}
+
+a:active {
+  color: inherit;
+}

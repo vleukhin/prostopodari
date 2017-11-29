@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'GloberBlack';
+  src: url('/fonts/glober_black-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Phenomena';
+  src: url('/fonts/phenomena-bold-webfont.woff2') format('woff2'),
+  url('/fonts/phenomena-bold-webfont.woff') format('woff'),
+  url('/fonts/phenomena-bold-webfont.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Phenomena';
+  src: url('/fonts/phenomena-extrabold-webfont.woff2') format('woff2'),
+  url('/fonts/phenomena-extrabold-webfont.woff') format('woff'),
+  url('/fonts/phenomena-extrabold-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
