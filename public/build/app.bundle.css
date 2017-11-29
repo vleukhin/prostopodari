@@ -37,6 +37,16 @@
     background-color: transparent;
     border: 3px solid #fff; }
 
+.pp-caption {
+  width: 100%;
+  background-color: #d20833;
+  padding: 35px 0; }
+  .pp-caption_green {
+    background-color: #3e974b; }
+  .pp-caption__text {
+    display: block;
+    margin: 0 auto; }
+
 /**
  * Blocks
  */
