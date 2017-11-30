@@ -82,6 +82,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 window.$ = window.jQuery = __webpack_require__(4);
 window._ = __webpack_require__(5);
 
+window.toggleMenu  = __webpack_require__(8);
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
@@ -27506,6 +27508,29 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Viktor Leukhin.
+ * Tel: +7-926-797-5419
+ * E-mail: vleukhin@ya.ru
+ */
+module.exports = function (element, toggleClass, menu) {
+    var $element = $(element);
+    var $menu = $(menu);
+
+    if ($element.hasClass(toggleClass)) {
+        $menu.slideUp();
+    }
+    else {
+        $menu.slideDown();
+    }
+
+    $element.toggleClass(toggleClass);
+};
 
 /***/ })
 /******/ ]);

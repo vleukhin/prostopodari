@@ -1,0 +1,55 @@
+.pp-burger {
+  $block: &;
+
+  cursor: pointer;
+  float: right;
+  width: 66px;
+  height: 66px;
+  position: relative;
+  user-select: none;
+  z-index: 1001;
+
+  &_open {
+    #{$block}__one {
+      transform: rotate(45deg);
+    }
+
+    #{$block}__two {
+      width: 0;
+      opacity: 0;
+    }
+
+    #{$block}__three {
+      transform: rotate(-45deg);
+      top: 47px;
+    }
+  }
+
+  > * {
+    background: #fff;
+    cursor: pointer;
+    display: block;
+    width: 66px;
+    height: 3px;
+    opacity: 1;
+    position: absolute;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    transition: .25s ease-in-out;
+  }
+
+  &__one {
+    top: 0;
+    transform-origin: left center;
+  }
+
+  &__two {
+    top: 31px;
+    transform-origin: left center;
+  }
+
+  &__three {
+    top: 63px;
+    transform-origin: left center;
+  }
+}

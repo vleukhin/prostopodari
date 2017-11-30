@@ -9,6 +9,8 @@
 </head>
 <body>
 <div class="page">
+    @include('layout.header')
+
     <div class="content">
         @yield('content')
     </div>

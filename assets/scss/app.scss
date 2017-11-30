@@ -2,19 +2,21 @@
 @import "inc/adaptive-mixins";
 @import "inc/mixins";
 @import "inc/fonts";
+@import "layout/header";
 /**
  * Partials
  */
 @import "partials/button";
 @import "partials/caption";
+
 /**
  * Blocks
  */
-
+@import "blocks/menu";
+@import "blocks/burger";
 /**
  * Screens
  */
-
 
 html, body {
   background: $color_blue;

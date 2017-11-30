@@ -1,0 +1,26 @@
+.pp-menu {
+  display: none;
+  list-style: none;
+  font-size: 36px;
+  width: 100%;
+  max-width: 538px;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    border-bottom: 4px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    padding: 24px 0;
+    text-decoration: none;
+    display: block;
+  }
+}

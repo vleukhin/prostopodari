@@ -10,6 +10,30 @@
   font-weight: normal;
   font-style: normal; }
 
+.pp-header {
+  font-family: gilroy, sans-serif;
+  background: #d20833;
+  position: fixed;
+  min-height: 107px;
+  width: 100%;
+  padding: 28px 0 0; }
+  .pp-header__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    max-width: 930px;
+    margin: 0 auto;
+    line-height: 77px; }
+  .pp-header__phone {
+    font-size: 78px; }
+  .pp-header__menu {
+    display: flex;
+    justify-content: center; }
+  .pp-header__menu-switcher {
+    font-size: 78px; }
+
 /**
  * Partials
  */
@@ -23,7 +47,8 @@
   background-color: #d20833;
   border: none;
   cursor: pointer;
-  font-style: normal; }
+  font-style: normal;
+  outline: none; }
   .pp-button_green {
     background-color: #3e974b; }
     .pp-button_green.pp-button_bordered {
@@ -46,6 +71,63 @@
 /**
  * Blocks
  */
+.pp-menu {
+  display: none;
+  list-style: none;
+  font-size: 36px;
+  width: 100%;
+  max-width: 538px;
+  margin: 0;
+  padding: 0; }
+  .pp-menu__item {
+    border-bottom: 4px solid #fff;
+    text-align: center;
+    text-transform: uppercase; }
+    .pp-menu__item:last-child {
+      border-bottom: none; }
+  .pp-menu__link {
+    color: #fff;
+    padding: 24px 0;
+    text-decoration: none;
+    display: block; }
+
+.pp-burger {
+  cursor: pointer;
+  float: right;
+  width: 66px;
+  height: 66px;
+  position: relative;
+  user-select: none;
+  z-index: 1001; }
+  .pp-burger_open .pp-burger__one {
+    transform: rotate(45deg); }
+  .pp-burger_open .pp-burger__two {
+    width: 0;
+    opacity: 0; }
+  .pp-burger_open .pp-burger__three {
+    transform: rotate(-45deg);
+    top: 47px; }
+  .pp-burger > * {
+    background: #fff;
+    cursor: pointer;
+    display: block;
+    width: 66px;
+    height: 3px;
+    opacity: 1;
+    position: absolute;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    transition: .25s ease-in-out; }
+  .pp-burger__one {
+    top: 0;
+    transform-origin: left center; }
+  .pp-burger__two {
+    top: 31px;
+    transform-origin: left center; }
+  .pp-burger__three {
+    top: 63px;
+    transform-origin: left center; }
+
 /**
  * Screens
  */

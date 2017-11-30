@@ -1,0 +1,33 @@
+.pp-header {
+  font-family: gilroy, sans-serif;
+  background: $color_red;
+  position: fixed;
+  min-height: 107px;
+  width: 100%;
+  padding: 28px 0 0;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    max-width: 930px;
+    margin: 0 auto;
+    line-height: 77px;
+  }
+
+  &__button {
+
+  }
+  &__phone {
+    font-size: 78px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+  }
+  &__menu-switcher {
+    font-size: 78px;
+  }
+}
