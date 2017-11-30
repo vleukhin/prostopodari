@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="/build/app.bundle.css">
 </head>
 <body>
+@include('layout.header')
 <div class="page">
-    @include('layout.header')
-
     <div class="content">
         @yield('content')
     </div>

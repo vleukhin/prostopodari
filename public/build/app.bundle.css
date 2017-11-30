@@ -141,6 +141,9 @@ html, body {
 .page, .content {
   height: 100%; }
 
+.page {
+  padding-top: 135px; }
+
 a:active {
   color: inherit; }
 @charset "UTF-8";

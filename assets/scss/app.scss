@@ -8,12 +8,12 @@
  */
 @import "partials/button";
 @import "partials/caption";
-
 /**
  * Blocks
  */
 @import "blocks/menu";
 @import "blocks/burger";
+
 /**
  * Screens
  */
@@ -28,6 +28,10 @@ html, body {
 
 .page, .content {
   height: 100%;
+}
+
+.page {
+  padding-top: 135px;
 }
 
 a:active {
