@@ -4,6 +4,12 @@
 @extends('app')
 
 @section('content')
+    @include('screens.intro')
+
+
+
+
+
     <div class="pp-caption pp-caption_green">
         <img src="/images/caption_1.png" alt="Просто несколько причина подарить" class="pp-caption__text">
     </div>
