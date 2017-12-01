@@ -150,7 +150,6 @@
   .pp-reason__body {
     padding-left: 18px; }
   .pp-reason__icon {
-    margin-right: 30px;
     position: absolute; }
   .pp-reason__title {
     font-weight: 700; }
@@ -162,7 +161,7 @@
   .pp-reason:nth-child(2) {
     margin-bottom: 90px; }
     .pp-reason:nth-child(2) .pp-reason__icon {
-      right: -105px;
+      right: -40px;
       top: 7px; }
   .pp-reason:nth-child(3) .pp-reason__icon {
     left: -110px;

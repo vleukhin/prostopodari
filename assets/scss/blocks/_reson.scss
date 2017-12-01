@@ -22,7 +22,6 @@
   }
 
   &__icon {
-    margin-right: 30px;
     position: absolute;
   }
   &__title {
@@ -43,7 +42,7 @@
     margin-bottom: 90px;
 
     #{$block}__icon{
-      right: -105px;
+      right: -40px;
       top: 7px;
     }
   }
