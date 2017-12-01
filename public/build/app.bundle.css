@@ -192,6 +192,29 @@
     height: 31px;
     background-color: #d20833; }
 
+.pp-carousel {
+  font-family: gilroy, sans-serif;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative; }
+  .pp-carousel__arrow {
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    border: 3px solid #1e7131;
+    border-radius: 50%;
+    line-height: 85px;
+    color: #1e7131;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: 30%; }
+    .pp-carousel__arrow_prev {
+      left: 10%; }
+    .pp-carousel__arrow_next {
+      right: 10%; }
+
 /**
  * Screens
  */

@@ -30,4 +30,30 @@
             <img src="/images/icon_height_green.png" alt=""> @{{ height }} см
         </span>
     </div>
+    <div class="pp-carousel">
+        <div class="pp-carousel__item">
+            <div class="pp-carousel__image">
+                <img src="/images/content/1.png" alt="">
+            </div>
+            <div class="pp-carousel__title">Пряник</div>
+        </div>
+        <div class="pp-carousel__item">
+            <div class="pp-carousel__image">
+                <img src="/images/content/1.png" alt="">
+            </div>
+            <div class="pp-carousel__title">Драник</div>
+        </div>
+        <div class="pp-carousel__item">
+            <div class="pp-carousel__image">
+                <img src="/images/content/1.png" alt="">
+            </div>
+            <div class="pp-carousel__title">Веник</div>
+        </div>
+        <div class="pp-carousel__item">
+            <div class="pp-carousel__image">
+                <img src="/images/content/1.png" alt="">
+            </div>
+            <div class="pp-carousel__title">Хуяник</div>
+        </div>
+    </div>
 </div>
