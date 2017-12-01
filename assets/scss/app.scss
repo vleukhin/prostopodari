@@ -14,11 +14,13 @@
  */
 @import "blocks/menu";
 @import "blocks/burger";
+@import "blocks/reson";
 
 /**
  * Screens
  */
 @import "screens/intro";
+@import "screens/reasons";
 
 html, body {
   background: $color_blue;

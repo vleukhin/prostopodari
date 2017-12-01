@@ -1,0 +1,58 @@
+.pp-reason {
+  $block: &;
+
+  font-family: gilroy, sans-serif;
+  font-size: 36px;
+  color: $color_dark_green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 75px;
+  position: relative;
+
+  width: 100%;
+  max-width: 677px;
+
+  &__body {
+    padding-left: 18px;
+  }
+
+  &_right-icon {
+
+  }
+
+  &__icon {
+    margin-right: 30px;
+    position: absolute;
+  }
+  &__title {
+    font-weight: 700;
+  }
+  &__text {
+    line-height: 31px;
+  }
+
+  &:nth-child(1) {
+    #{$block}__icon{
+      left: -80px;
+      top: -7px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 90px;
+
+    #{$block}__icon{
+      right: -105px;
+      top: 7px;
+    }
+  }
+
+  &:nth-child(3) {
+    #{$block}__icon{
+      left: -110px;
+      top: -38px;
+    }
+  }
+
+}

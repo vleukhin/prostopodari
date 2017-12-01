@@ -14,10 +14,10 @@
   outline: none;
 
   &_green {
-    background-color: $color_green;
+    background-color: $color_dark_green;
     &.pp-button_bordered {
-      border: 3px solid $color_green;
-      color: $color_green;
+      border: 3px solid $color_dark_green;
+      color: $color_dark_green;
     }
   }
 
