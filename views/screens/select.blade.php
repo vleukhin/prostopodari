@@ -3,7 +3,7 @@
 {{--E-mail: vleukhin@ya.ru--}}
 <div class="pp-screen-select">
     <div class="pp-screen-select__title">Размер</div>
-    <div class="pp-screen-select__sizes">
+    <div class="pp-screen-select__sizes" id="sizes">
         @include('blocks.size', [
             'name' => 'small',
             'diameter' => 16,

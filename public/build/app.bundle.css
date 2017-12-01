@@ -181,7 +181,8 @@
     height: 47px;
     cursor: pointer;
     display: inline-block;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-top: 30px; }
     .pp-size__checkbox .pp-size__checkbox-inner {
       display: none; }
     .pp-size__checkbox_active .pp-size__checkbox-inner {

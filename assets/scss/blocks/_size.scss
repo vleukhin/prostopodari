@@ -26,6 +26,7 @@
     cursor: pointer;
     display: inline-block;
     box-sizing: border-box;
+    margin-top: 30px;
 
     #{$block}__checkbox-inner {
       display: none;
