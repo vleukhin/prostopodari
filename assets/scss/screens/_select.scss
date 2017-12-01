@@ -1,0 +1,21 @@
+.pp-screen-select {
+  font-family: gilroy, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  padding: 60px 0;
+
+  &__title {
+    font-weight: 700;
+    color: $color_red;
+  }
+
+  &__sizes {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    .pp-size:nth-child(2) {
+      margin: 0 10%;
+    }
+  }
+}

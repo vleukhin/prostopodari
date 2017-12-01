@@ -15,12 +15,14 @@
 @import "blocks/menu";
 @import "blocks/burger";
 @import "blocks/reson";
+@import "blocks/size";
 
 /**
  * Screens
  */
 @import "screens/intro";
 @import "screens/reasons";
+@import "screens/select";
 
 html, body {
   background: $color_blue;

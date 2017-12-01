@@ -167,6 +167,30 @@
     left: -110px;
     top: -38px; }
 
+.pp-size {
+  font-family: gilroy, sans-serif;
+  font-size: 36px;
+  color: #d20833; }
+  .pp-size__name {
+    font-weight: 700;
+    margin-bottom: 13px; }
+  .pp-size__checkbox {
+    padding: 5px;
+    border: 3px solid #d20833;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box; }
+    .pp-size__checkbox .pp-size__checkbox-inner {
+      display: none; }
+    .pp-size__checkbox_active .pp-size__checkbox-inner {
+      display: block; }
+  .pp-size__checkbox-inner {
+    width: 31px;
+    height: 31px;
+    background-color: #d20833; }
+
 /**
  * Screens
  */
@@ -197,6 +221,21 @@
   flex-direction: column;
   align-items: center;
   padding-top: 75px; }
+
+.pp-screen-select {
+  font-family: gilroy, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  padding: 60px 0; }
+  .pp-screen-select__title {
+    font-weight: 700;
+    color: #d20833; }
+  .pp-screen-select__sizes {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; }
+    .pp-screen-select__sizes .pp-size:nth-child(2) {
+      margin: 0 10%; }
 
 html, body {
   background: #c2dcec;
