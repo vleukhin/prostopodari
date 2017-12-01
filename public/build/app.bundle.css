@@ -237,6 +237,10 @@
     margin-top: 40px; }
     .pp-screen-select__sizes .pp-size:nth-child(2) {
       margin: 0 10%; }
+  .pp-screen-select__present {
+    margin: 40px 0; }
+  .pp-screen-select__text {
+    color: #1e7131; }
 
 html, body {
   background: #c2dcec;
@@ -253,6 +257,9 @@ html, body {
 
 a:active {
   color: inherit; }
+
+[v-cloak] {
+  display: none; }
 @charset "UTF-8";
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

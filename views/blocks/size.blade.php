@@ -5,7 +5,7 @@
     <div class="pp-size__name">{{ $name }}</div>
     <div class="pp-size__diameter"><img src="/images/icon_diameter.png" alt=""> {{ $diameter }} см;</div>
     <div class="pp-size__height"><img src="/images/icon_height.png" alt=""> {{ $height }} см</div>
-    <div class="pp-size__checkbox" v-on:click="selectedSize='{{$name}}'" v-bind:class="{'pp-size__checkbox_active':isSelected('{{ $name }}')}">
+    <div class="pp-size__checkbox" v-on:click="selectSize('{{$name}}', {{ $diameter }}, {{ $height }})" v-bind:class="{'pp-size__checkbox_active':isSelected('{{ $name }}')}">
         <div class="pp-size__checkbox-inner"></div>
     </div>
 </div>

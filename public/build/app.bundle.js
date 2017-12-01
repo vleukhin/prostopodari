@@ -27561,12 +27561,20 @@ module.exports = function (element) {
         el: element,
 
         data: {
-            selectedSize: ''
+            size: '',
+            diameter: 0,
+            height: 0,
         },
 
         methods: {
             isSelected: function (size) {
-                return this.selectedSize === size;
+                return this.size === size;
+            },
+
+            selectSize: function (size, diameter, height) {
+                this.size = size;
+                this.diameter = diameter;
+                this.height = height;
             }
         }
     });
