@@ -6,6 +6,10 @@
     <title>Просто подари</title>
     <link rel="stylesheet" type="text/css" href="/js/slick/slick.css"/>
     <link rel="stylesheet" href="/build/app.bundle.css">
+    <meta property="og:title" content="Просто подари" />
+    <meta property="og:image" content="https://prostopodari.ru/images/present_clear.png" />
+    <meta property="og:description" content="Интернет магазин готового подарка">
+    <meta name="description" content="Интернет магазин готового подарка">
 </head>
 <body>
 @include('layout.header')
