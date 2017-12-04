@@ -1,9 +1,22 @@
 .pp-carousel {
   font-family: gilroy, sans-serif;
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
+
+  &__item {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    color: $color_dark_green;
+  }
 
   &__arrow {
     box-sizing: border-box;
@@ -17,12 +30,29 @@
     cursor: pointer;
     position: absolute;
     top: 30%;
+    z-index: 2;
 
-    &_prev{
-      left: 10%;
+    &_prev {
+      left: 27%;
     }
-    &_next{
-      right: 10%;
+
+    &_next {
+      right: 27%;
     }
+  }
+}
+
+.slick-slide {
+  margin: 0 50px;
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -50px;
+}
+
+.slick-active:not(.slick-current) {
+  img {
+    //width: 80%;
   }
 }

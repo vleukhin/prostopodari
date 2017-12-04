@@ -19,13 +19,19 @@
 <script>
     (function ($) {
         $(document).ready(function () {
-            $('.pp-carousel').slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
-                nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
-            });
+            // var slider = $('.pp-carousel');
+            // slider.slick({
+            //     // centerMode: true,
+            //     centerPadding: '100px',
+            //     slidesToShow: 3,
+            //     prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
+            //     nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
+            // });
+            //
+            // slider.on('swipe', function(event, slick, direction){
+            //     console.log(direction);
+            //     // left
+            // });
         });
     })(window.jQuery);
 </script>

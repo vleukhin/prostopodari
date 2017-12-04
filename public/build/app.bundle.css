@@ -17,7 +17,7 @@
   min-height: 107px;
   width: 100%;
   padding: 28px 0 0;
-  z-index: 1; }
+  z-index: 3; }
   .pp-header__header {
     display: flex;
     flex-direction: row;
@@ -195,9 +195,16 @@
 .pp-carousel {
   font-family: gilroy, sans-serif;
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative; }
+  .pp-carousel__item img {
+    display: block;
+    margin: 0 auto; }
+  .pp-carousel__title {
+    font-size: 36px;
+    text-align: center;
+    color: #1e7131; }
   .pp-carousel__arrow {
     box-sizing: border-box;
     width: 90px;
@@ -209,11 +216,19 @@
     font-weight: 700;
     cursor: pointer;
     position: absolute;
-    top: 30%; }
+    top: 30%;
+    z-index: 2; }
     .pp-carousel__arrow_prev {
-      left: 10%; }
+      left: 27%; }
     .pp-carousel__arrow_next {
-      right: 10%; }
+      right: 27%; }
+
+.slick-slide {
+  margin: 0 50px; }
+
+/* the parent */
+.slick-list {
+  margin: 0 -50px; }
 
 /**
  * Screens
@@ -250,7 +265,7 @@
   font-family: gilroy, sans-serif;
   font-size: 36px;
   text-align: center;
-  padding: 60px 0; }
+  padding: 60px 37px; }
   .pp-screen-select__title {
     font-weight: 700;
     color: #d20833; }
@@ -264,6 +279,42 @@
     margin: 40px 0; }
   .pp-screen-select__text {
     color: #1e7131; }
+  .pp-screen-select__separator {
+    height: 60px;
+    width: 3px;
+    background-color: #1e7131;
+    display: block;
+    margin: 30px auto; }
+  .pp-screen-select__price {
+    font-weight: 700;
+    color: #1e7131;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 50px; }
+  .pp-screen-select__price-value {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #1e7131;
+    padding: 15px;
+    position: relative; }
+    .pp-screen-select__price-value:after {
+      content: "";
+      position: absolute;
+      left: -37px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-right: 37px solid #1e7131;
+      border-top: 37px solid transparent;
+      border-bottom: 37px solid transparent; }
+  .pp-screen-select .pp-button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 465px;
+    margin-bottom: 22px; }
 
 html, body {
   background: #c2dcec;

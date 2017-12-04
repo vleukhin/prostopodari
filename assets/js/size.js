@@ -11,6 +11,7 @@ module.exports = function (element) {
             size: '',
             diameter: 0,
             height: 0,
+            price: 2500,
         },
 
         methods: {
@@ -22,6 +23,20 @@ module.exports = function (element) {
                 this.size = size;
                 this.diameter = diameter;
                 this.height = height;
+
+                setTimeout(function () {
+                    var slider = $('.pp-carousel');
+                    if (!slider.hasClass('slick-initialized')){
+                        slider.slick({
+                            // centerMode: true,
+                            centerPadding: '100px',
+                            slidesToShow: 3,
+                            prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
+                            nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
+                        });
+                    }
+                }, 500)
+
             }
         }
     });

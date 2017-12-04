@@ -2,7 +2,7 @@
   font-family: gilroy, sans-serif;
   font-size: 36px;
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 37px;
 
   &__title {
     font-weight: 700;
@@ -25,5 +25,52 @@
 
   &__text {
     color: $color_dark_green;
+  }
+
+  &__separator {
+    height: 60px;
+    width: 3px;
+    background-color: $color_dark_green;
+    display: block;
+    margin: 30px auto;
+  }
+
+  &__price {
+    font-weight: 700;
+    color: $color_dark_green;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+  }
+
+  &__price-value {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: $color_dark_green;
+    padding: 15px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: -37px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-right: 37px solid $color_dark_green;
+      border-top: 37px solid transparent;
+      border-bottom: 37px solid transparent;
+    }
+  }
+
+  .pp-button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 465px;
+    margin-bottom: 22px;
   }
 }
