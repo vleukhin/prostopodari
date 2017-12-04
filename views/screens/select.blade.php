@@ -2,6 +2,10 @@
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
 <div class="pp-screen-select" id="select" v-cloak>
+    <div class="pp-caption">
+        <img src="/images/caption_2.png" alt="Просто выбрать" class="pp-caption__text">
+    </div>
+
     <div class="pp-screen-select__title">Размер</div>
     <div class="pp-screen-select__sizes">
         @include('blocks.size', [

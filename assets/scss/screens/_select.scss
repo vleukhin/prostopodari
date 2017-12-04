@@ -2,7 +2,11 @@
   font-family: gilroy, sans-serif;
   font-size: 36px;
   text-align: center;
-  padding: 60px 37px;
+  padding-bottom: 60px;
+
+  .pp-caption {
+    margin-bottom: 60px;
+  }
 
   &__title {
     font-weight: 700;

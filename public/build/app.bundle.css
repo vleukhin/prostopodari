@@ -343,14 +343,17 @@
 .pp-screen-reasons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 75px; }
+  align-items: center; }
+  .pp-screen-reasons .pp-caption {
+    margin-bottom: 75px; }
 
 .pp-screen-select {
   font-family: gilroy, sans-serif;
   font-size: 36px;
   text-align: center;
-  padding: 60px 37px; }
+  padding-bottom: 60px; }
+  .pp-screen-select .pp-caption {
+    margin-bottom: 60px; }
   .pp-screen-select__title {
     font-weight: 700;
     color: #d20833; }
