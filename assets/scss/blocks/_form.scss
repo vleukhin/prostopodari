@@ -1,0 +1,52 @@
+.pp-form {
+  font-family: gilroy, sans-serif;
+  font-size: 36px;
+
+  &__input {
+    width: 100%;
+    max-width: 435px;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    display: block;
+    margin: 0 auto;
+    height: 78px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+
+    @include placeholder {
+      font-size: 36px;
+      color: #fff;
+    }
+  }
+
+  textarea.pp-form__input {
+    height: 145px;
+    margin-bottom: 37px;
+  }
+
+  &__label {
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  &__checkbox {
+    margin: 21px auto 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+
+    .pp-checkbox {
+      vertical-align: middle;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+}

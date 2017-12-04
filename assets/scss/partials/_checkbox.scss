@@ -1,0 +1,36 @@
+.pp-checkbox {
+  $block: &;
+  $size: 47px;
+  $padding: 5px;
+  $border: 3px;
+
+  padding: $padding;
+  border: $border solid $color_red;
+  width: $size;
+  height: $size;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+
+  &_active {
+    #{$block}__inner {
+      display: block;
+    }
+  }
+
+  &_white {
+    border-color: #fff;
+
+    #{$block}__inner {
+      background-color: #fff;
+    }
+  }
+
+  &__inner {
+    display: none;
+    width: $size - ($border + $padding)*2;
+    height: $size - ($border + $padding)*2;
+    background-color: $color_red;
+  }
+}
+

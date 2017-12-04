@@ -19,19 +19,7 @@
 <script>
     (function ($) {
         $(document).ready(function () {
-            // var slider = $('.pp-carousel');
-            // slider.slick({
-            //     // centerMode: true,
-            //     centerPadding: '100px',
-            //     slidesToShow: 3,
-            //     prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
-            //     nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
-            // });
-            //
-            // slider.on('swipe', function(event, slick, direction){
-            //     console.log(direction);
-            //     // left
-            // });
+            $('#phone').mask("+7 999 999 9999", {placeholder: "+7 ___ ___ ____"});
         });
     })(window.jQuery);
 </script>

@@ -76,6 +76,26 @@
   text-align: center;
   line-height: 36px; }
 
+.pp-checkbox {
+  padding: 5px;
+  border: 3px solid #d20833;
+  width: 47px;
+  height: 47px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box; }
+  .pp-checkbox_active .pp-checkbox__inner {
+    display: block; }
+  .pp-checkbox_white {
+    border-color: #fff; }
+    .pp-checkbox_white .pp-checkbox__inner {
+      background-color: #fff; }
+  .pp-checkbox__inner {
+    display: none;
+    width: 31px;
+    height: 31px;
+    background-color: #d20833; }
+
 /**
  * Blocks
  */
@@ -175,22 +195,7 @@
     font-weight: 700;
     margin-bottom: 13px; }
   .pp-size__checkbox {
-    padding: 5px;
-    border: 3px solid #d20833;
-    width: 47px;
-    height: 47px;
-    cursor: pointer;
-    display: inline-block;
-    box-sizing: border-box;
     margin-top: 30px; }
-    .pp-size__checkbox .pp-size__checkbox-inner {
-      display: none; }
-    .pp-size__checkbox_active .pp-size__checkbox-inner {
-      display: block; }
-  .pp-size__checkbox-inner {
-    width: 31px;
-    height: 31px;
-    background-color: #d20833; }
 
 .pp-carousel {
   font-family: gilroy, sans-serif;
@@ -257,6 +262,56 @@
     height: 100px;
     text-align: center;
     line-height: 100px; }
+
+.pp-form {
+  font-family: gilroy, sans-serif;
+  font-size: 36px; }
+  .pp-form__input {
+    width: 100%;
+    max-width: 435px;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    display: block;
+    margin: 0 auto;
+    height: 78px;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    font-size: 36px;
+    color: #fff;
+    text-align: center; }
+    .pp-form__input::placeholder {
+      font-size: 36px;
+      color: #fff; }
+    .pp-form__input::-webkit-input-placeholder {
+      font-size: 36px;
+      color: #fff; }
+    .pp-form__input:-moz-placeholder {
+      font-size: 36px;
+      color: #fff; }
+    .pp-form__input::-moz-placeholder {
+      font-size: 36px;
+      color: #fff; }
+    .pp-form__input:-ms-input-placeholder {
+      font-size: 36px;
+      color: #fff; }
+  .pp-form textarea.pp-form__input {
+    height: 145px;
+    margin-bottom: 37px; }
+  .pp-form__label {
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+  .pp-form__checkbox {
+    margin: 21px auto 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: left; }
+    .pp-form__checkbox .pp-checkbox {
+      vertical-align: middle; }
+    .pp-form__checkbox span {
+      vertical-align: middle; }
 
 /**
  * Screens
@@ -370,6 +425,11 @@
   .pp-screen-basket__button {
     width: 100%;
     max-width: 465px; }
+
+.pp-screen-form {
+  background-color: #d20833;
+  text-align: center;
+  padding: 50px 0; }
 
 html, body {
   background: #c2dcec;

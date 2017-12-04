@@ -18,6 +18,7 @@
 
     @include('screens.select')
     @include('screens.basket')
+    @include('screens.form')
 
     <div class="pp-caption pp-caption_green">
         <img src="/images/caption_4.png" alt="Просто выбрать" class="pp-caption__text">

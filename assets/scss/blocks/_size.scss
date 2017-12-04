@@ -1,9 +1,4 @@
 .pp-size {
-  $block: &;
-  $size: 47px;
-  $padding: 5px;
-  $border: 3px;
-
   font-family: gilroy, sans-serif;
   font-size: 36px;
   color: $color_red;
@@ -18,30 +13,8 @@
   &__height {
 
   }
-  &__checkbox {
-    padding: $padding;
-    border: $border solid $color_red;
-    width: $size;
-    height: $size;
-    cursor: pointer;
-    display: inline-block;
-    box-sizing: border-box;
+
+  &__checkbox{
     margin-top: 30px;
-
-    #{$block}__checkbox-inner {
-      display: none;
-    }
-
-    &_active {
-      #{$block}__checkbox-inner {
-        display: block;
-      }
-    }
-  }
-
-  &__checkbox-inner {
-    width: $size - ($border + $padding)*2;
-    height: $size - ($border + $padding)*2;
-    background-color: $color_red;
   }
 }
