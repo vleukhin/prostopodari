@@ -26,6 +26,8 @@
   textarea.pp-form__input {
     height: 145px;
     margin-bottom: 37px;
+    resize: none;
+    overflow: hidden;
   }
 
   &__label {
