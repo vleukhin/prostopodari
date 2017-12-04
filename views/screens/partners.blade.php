@@ -1,7 +1,7 @@
 {{--Created by Viktor Leukhin--}}
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
-<div class="pp-screen-partners">
+<div class="pp-screen-partners" id="partners">
     <div class="pp-caption pp-caption_green">
         <img src="/images/caption_4.png" alt="Просто выбрать" class="pp-caption__text">
     </div>

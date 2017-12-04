@@ -14,22 +14,22 @@
         </div>
     </div>
 
-    <div class="pp-header__menu">
+    <div class="pp-header__menu" id="menu">
         <ul class="pp-menu">
             <li class="pp-menu__item">
-                <a href="#screen-present" class="pp-menu__link">Просто подари</a>
+                <a href="#intro" class="pp-menu__link">Просто подари</a>
             </li>
             <li class="pp-menu__item">
-                <a href="#screen-present" class="pp-menu__link">Почему просто</a>
+                <a href="#reasons" class="pp-menu__link">Почему просто</a>
             </li>
             <li class="pp-menu__item">
-                <a href="#screen-present" class="pp-menu__link">Просто выбрать</a>
+                <a href="#select" class="pp-menu__link">Просто выбрать</a>
             </li>
             <li class="pp-menu__item">
-                <a href="#screen-present" class="pp-menu__link">Корзина</a>
+                <a href="#basket" class="pp-menu__link">Корзина</a>
             </li>
             <li class="pp-menu__item">
-                <a href="#screen-present" class="pp-menu__link">Партнеры</a>
+                <a href="#partners" class="pp-menu__link">Партнеры</a>
             </li>
         </ul>
     </div>

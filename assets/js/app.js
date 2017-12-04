@@ -9,5 +9,5 @@ require('vue-resource');
 require('../../bower_components/jquery.maskedinput/src/jquery.maskedinput');
 
 window.toggleMenu  = require('./menu');
-window.Size = require('./size')('#sizes');
+window.Size = require('./size')('#select');
 window.Basket = require('./basket')('#basket');

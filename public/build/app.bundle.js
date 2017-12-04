@@ -10373,7 +10373,7 @@ __webpack_require__(13);
 __webpack_require__(6);
 
 window.toggleMenu  = __webpack_require__(15);
-window.Size = __webpack_require__(16)('#sizes');
+window.Size = __webpack_require__(16)('#select');
 window.Basket = __webpack_require__(17)('#basket');
 
 /***/ }),

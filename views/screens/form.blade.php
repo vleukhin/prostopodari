@@ -1,7 +1,7 @@
 {{--Created by Viktor Leukhin--}}
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
-<div class="pp-screen-form">
+<div class="pp-screen-form" id="form">
     <form class="pp-form">
         <label for="name" class="pp-form__label">Имя</label>
         <input type="text" id="name" name="name" class="pp-form__input"/>

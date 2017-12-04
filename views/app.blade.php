@@ -21,6 +21,17 @@
         $(document).ready(function () {
             $('#phone').mask("+7 999 999 9999", {placeholder: "+7 ___ ___ ____"});
         });
+
+        var headerHeight = $('.pp-header').height();
+
+        $(document).on('click', '#menu a', function (event) {
+            $('.pp-header__burger').click();
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top - headerHeight,
+            }, 500);
+        });
     })(window.jQuery);
 </script>
 </body>

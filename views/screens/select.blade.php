@@ -1,7 +1,7 @@
 {{--Created by Viktor Leukhin--}}
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
-<div class="pp-screen-select" id="sizes" v-cloak>
+<div class="pp-screen-select" id="select" v-cloak>
     <div class="pp-screen-select__title">Размер</div>
     <div class="pp-screen-select__sizes">
         @include('blocks.size', [

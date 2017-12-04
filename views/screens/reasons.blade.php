@@ -1,7 +1,7 @@
 {{--Created by Viktor Leukhin--}}
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
-<div class="pp-screen-reasons">
+<div class="pp-screen-reasons" id="reasons">
     @include('blocks.reason', [
         'icon' => 'phone.png',
         'title' => 'легко заказать',
