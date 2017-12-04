@@ -17,12 +17,14 @@
 @import "blocks/reason";
 @import "blocks/size";
 @import "blocks/carousel";
+@import "blocks/counter";
 /**
  * Screens
  */
 @import "screens/intro";
 @import "screens/reasons";
 @import "screens/select";
+@import "screens/basket";
 
 html, body {
   background: $color_blue;

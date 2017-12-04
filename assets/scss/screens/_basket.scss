@@ -1,0 +1,36 @@
+.pp-screen-basket {
+  font-family: gilroy, sans-serif;
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 65px;
+
+  &__present {
+    margin-top: 46px;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  &__size {
+    font-weight: 700;
+    color: $color_dark_green;
+    text-transform: uppercase;
+    margin-bottom: 68px;
+  }
+  &__counter {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  &__sum {
+    color: $color_red;
+    font-weight: 700;
+    margin: 57px 0 29px;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 465px;
+  }
+}

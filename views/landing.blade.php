@@ -15,13 +15,9 @@
     <div class="pp-caption">
         <img src="/images/caption_2.png" alt="Просто выбрать" class="pp-caption__text">
     </div>
-1
+
     @include('screens.select')
-2
-    <div class="pp-caption">
-        <img src="/images/caption_3.png" alt="Просто выбрать" class="pp-caption__text">
-    </div>
-    <br><br>
+    @include('screens.basket')
 
     <div class="pp-caption pp-caption_green">
         <img src="/images/caption_4.png" alt="Просто выбрать" class="pp-caption__text">

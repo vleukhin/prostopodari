@@ -1,0 +1,27 @@
+.pp-counter {
+  @include unselectable;
+
+  font-family: gilroy, sans-serif;
+  font-size: 36px;
+  color: $color_dark_green;
+
+  > * {
+    display: inline-block;
+  }
+
+  &__plus, &__minus {
+    cursor: pointer;
+    margin: 0 60px;
+    font-size: 55px;
+  }
+
+  &__count {
+    color: #fff;
+    border-radius: 50%;
+    background: $color_dark_green;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+  }
+}

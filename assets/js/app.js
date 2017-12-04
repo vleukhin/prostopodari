@@ -9,3 +9,4 @@ require('vue-resource');
 
 window.toggleMenu  = require('./menu');
 window.Size = require('./size')('#sizes');
+window.Basket = require('./basket')('#basket');
