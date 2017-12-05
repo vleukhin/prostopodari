@@ -3,18 +3,27 @@
   font-size: $font_size;
   color: $color_red;
 
+  @include phone {
+    font-size: $font_phone_size;
+  }
+
   &__name {
     font-weight: 700;
     margin-bottom: 13px;
   }
-  &__diameter {
-
+  &__diameter, &__height {
+    img {
+      @include phone {
+        width: 18px;
+      }
+    }
   }
-  &__height {
 
-  }
-
-  &__checkbox{
+  &__checkbox {
     margin-top: 30px;
+
+    @include phone {
+      margin-top: 10px;
+    }
   }
 }

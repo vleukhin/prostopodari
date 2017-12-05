@@ -9,6 +9,9 @@
     img {
       display: block;
       margin: 0 auto;
+      @include phone {
+        max-height: 180px;
+      }
     }
   }
 

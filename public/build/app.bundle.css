@@ -104,6 +104,12 @@
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box; }
+  @media screen and (max-width: 480px) {
+    .pp-checkbox {
+      padding: 2px;
+      border: 1px solid #d20833;
+      width: 20px;
+      height: 20px; } }
   .pp-checkbox_active .pp-checkbox__inner {
     display: block; }
   .pp-checkbox_white {
@@ -115,6 +121,10 @@
     width: 30px;
     height: 30px;
     background-color: #d20833; }
+    @media screen and (max-width: 480px) {
+      .pp-checkbox__inner {
+        width: 14px;
+        height: 14px; } }
 
 /**
  * Blocks
@@ -263,11 +273,20 @@
   font-family: gilroy, sans-serif;
   font-size: 28px;
   color: #d20833; }
+  @media screen and (max-width: 480px) {
+    .pp-size {
+      font-size: 18px; } }
   .pp-size__name {
     font-weight: 700;
     margin-bottom: 13px; }
+  @media screen and (max-width: 480px) {
+    .pp-size__diameter img, .pp-size__height img {
+      width: 18px; } }
   .pp-size__checkbox {
     margin-top: 30px; }
+    @media screen and (max-width: 480px) {
+      .pp-size__checkbox {
+        margin-top: 10px; } }
 
 .pp-carousel {
   font-family: gilroy, sans-serif;
@@ -278,6 +297,9 @@
   .pp-carousel__item img {
     display: block;
     margin: 0 auto; }
+    @media screen and (max-width: 480px) {
+      .pp-carousel__item img {
+        max-height: 180px; } }
   .pp-carousel__title {
     font-size: 28px;
     text-align: center;
@@ -427,6 +449,9 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media screen and (max-width: 1024px) {
+    .pp-screen-reasons {
+      padding-bottom: 20px; } }
   .pp-screen-reasons .pp-caption {
     margin-bottom: 40px; }
     @media screen and (max-width: 480px) {
@@ -489,6 +514,9 @@
     width: 100%;
     max-width: 370px;
     margin-bottom: 22px; }
+    @media screen and (max-width: 480px) {
+      .pp-screen-select .pp-button {
+        max-width: 230px; } }
 
 .pp-screen-basket {
   font-family: gilroy, sans-serif;

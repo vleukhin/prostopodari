@@ -77,5 +77,9 @@
     width: 100%;
     max-width: 370px;
     margin-bottom: 22px;
+
+    @include phone {
+      max-width: 230px;
+    }
   }
 }

@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
 
+  @include tablet {
+    padding-bottom: 20px;
+  }
+
   .pp-caption {
     margin-bottom: 40px;
 

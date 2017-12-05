@@ -10,6 +10,9 @@
     <meta property="og:image" content="https://prostopodari.ru/images/present_clear.png" />
     <meta property="og:description" content="Интернет магазин готового подарка">
     <meta name="description" content="Интернет магазин готового подарка">
+    <script>
+        if(window.DEVICE_TYPE="",self.screen)scrwidth=screen.width,scrheight=screen.height;else if(self.java){var jkit=java.awt.Toolkit.getDefaultToolkit(),scrsize=jkit.getScreenSize();scrwidth=scrsize.width,scrheight=scrsize.height}scrwidth>0&&scrwidth<669?window.DEVICE_TYPE="phone":scrwidth>668&&scrwidth<1025?window.DEVICE_TYPE="tablet":scrwidth>1025&&(window.DEVICE_TYPE="desktop");
+    </script>
 </head>
 <body>
 @include('layout.header')
