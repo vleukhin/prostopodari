@@ -53,12 +53,43 @@
   }
   &__callme {
     padding: 0 5%;
-    .pp-form{
+
+    .pp-form {
       padding-bottom: 20px;
+
+      .pp-form__input {
+        max-width: 280px;
+      }
+
+      @media (orientation: landscape) {
+        .pp-form__label {
+          font-size: 18px;
+        }
+        .pp-form__input {
+          font-size: 18px;
+          height: 38px;
+          margin-bottom: 5px;
+
+          @include placeholder {
+            font-size: 18px;
+          }
+        }
+
+        .pp-button {
+          height: 38px;
+          font-size: 18px;
+          margin-top: 13px;
+        }
+      }
     }
-    .pp-button{
+
+    .pp-button {
       width: 100%;
-      max-width: 370px;
+      max-width: 280px;
+
+      @include tablet-mini {
+        max-width: 280px;
+      }
     }
   }
 }

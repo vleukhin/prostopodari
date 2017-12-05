@@ -470,9 +470,35 @@
     padding: 0 5%; }
     .pp-header__callme .pp-form {
       padding-bottom: 20px; }
+      .pp-header__callme .pp-form .pp-form__input {
+        max-width: 280px; }
+      @media (orientation: landscape) {
+        .pp-header__callme .pp-form .pp-form__label {
+          font-size: 18px; }
+        .pp-header__callme .pp-form .pp-form__input {
+          font-size: 18px;
+          height: 38px;
+          margin-bottom: 5px; }
+          .pp-header__callme .pp-form .pp-form__input::placeholder {
+            font-size: 18px; }
+          .pp-header__callme .pp-form .pp-form__input::-webkit-input-placeholder {
+            font-size: 18px; }
+          .pp-header__callme .pp-form .pp-form__input:-moz-placeholder {
+            font-size: 18px; }
+          .pp-header__callme .pp-form .pp-form__input::-moz-placeholder {
+            font-size: 18px; }
+          .pp-header__callme .pp-form .pp-form__input:-ms-input-placeholder {
+            font-size: 18px; }
+        .pp-header__callme .pp-form .pp-button {
+          height: 38px;
+          font-size: 18px;
+          margin-top: 13px; } }
     .pp-header__callme .pp-button {
       width: 100%;
-      max-width: 370px; }
+      max-width: 280px; }
+      @media screen and (max-width: 640px) {
+        .pp-header__callme .pp-button {
+          max-width: 280px; } }
 
 /**
  * Screens
