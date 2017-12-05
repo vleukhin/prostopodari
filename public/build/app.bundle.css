@@ -59,7 +59,7 @@
 .pp-caption {
   width: 100%;
   background-color: #d20833;
-  padding: 15px 0; }
+  padding: 20px 0; }
   .pp-caption_green {
     background-color: #1e7131; }
   .pp-caption__text {
@@ -348,14 +348,14 @@
   text-align: center;
   padding-bottom: 60px; }
   .pp-screen-select .pp-caption {
-    margin-bottom: 60px; }
+    margin-bottom: 25px; }
   .pp-screen-select__title {
     font-weight: 700;
     color: #d20833; }
   .pp-screen-select__sizes {
     display: flex;
     justify-content: center;
-    margin-top: 40px; }
+    margin-top: 15px; }
     .pp-screen-select__sizes .pp-size:nth-child(2) {
       margin: 0 10%; }
   .pp-screen-select__present {
@@ -385,18 +385,18 @@
     .pp-screen-select__price-value:after {
       content: "";
       position: absolute;
-      left: -37px;
+      left: -32px;
       bottom: 0;
       width: 0;
       height: 0;
-      border-right: 37px solid #1e7131;
-      border-top: 37px solid transparent;
-      border-bottom: 37px solid transparent; }
+      border-right: 32px solid #1e7131;
+      border-top: 32px solid transparent;
+      border-bottom: 32px solid transparent; }
   .pp-screen-select .pp-button {
     display: block;
     margin: 0 auto;
     width: 100%;
-    max-width: 465px;
+    max-width: 370px;
     margin-bottom: 22px; }
 
 .pp-screen-basket {
