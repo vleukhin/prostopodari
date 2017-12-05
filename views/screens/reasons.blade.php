@@ -2,7 +2,7 @@
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
 <div class="pp-screen-reasons" id="reasons">
-    <div class="pp-caption pp-caption_green">
+    <div class="pp-caption">
         <img src="/images/caption_1.png" alt="Просто несколько причина подарить" class="pp-caption__text">
     </div>
     <div>
