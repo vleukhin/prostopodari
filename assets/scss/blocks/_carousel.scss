@@ -35,23 +35,44 @@
     top: 30%;
     z-index: 2;
 
+    @include phone {
+      width: 45px;
+      height: 45px;
+      line-height: 41px;
+    }
+
     &_prev {
       left: 27%;
+
+      @include phone {
+        left: 10px;
+      }
     }
 
     &_next {
       right: 27%;
+
+      @include phone {
+        right: 10px;
+      }
     }
   }
 }
 
 .slick-slide {
   margin: 0 50px;
+  @include phone {
+    margin: 0;
+  }
 }
 
 /* the parent */
 .slick-list {
   margin: 0 -50px;
+
+  @include phone {
+    margin: 0;
+  }
 }
 
 .slick-active:not(.slick-current) {

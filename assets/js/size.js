@@ -31,8 +31,8 @@ module.exports = function (element) {
                             // centerMode: true,
                             centerPadding: '100px',
                             slidesToShow: DEVICE_TYPE == 'desktop' ? 3 : 1,
-                            prevArrow: DEVICE_TYPE == 'desktop' ? '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>' : '',
-                            nextArrow: DEVICE_TYPE == 'desktop' ? '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>' : '',
+                            prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
+                            nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
                         });
                     }
                 }, 500)
