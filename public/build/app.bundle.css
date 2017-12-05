@@ -247,16 +247,16 @@
     display: inline-block; }
   .pp-counter__plus, .pp-counter__minus {
     cursor: pointer;
-    margin: 0 60px;
-    font-size: 55px; }
+    margin: 0 25px;
+    font-size: 40px; }
   .pp-counter__count {
     color: #fff;
     border-radius: 50%;
     background: #1e7131;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     text-align: center;
-    line-height: 100px; }
+    line-height: 70px; }
 
 .pp-form {
   font-family: gilroy, sans-serif;
@@ -424,7 +424,7 @@
     margin: 57px 0 29px; }
   .pp-screen-basket__button {
     width: 100%;
-    max-width: 465px; }
+    max-width: 370px; }
 
 .pp-screen-form {
   background-color: #d20833;
