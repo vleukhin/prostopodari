@@ -2,6 +2,10 @@
   font-family: gilroy, sans-serif;
   font-size: $font_size;
 
+  @include phone{
+    font-size: 22px;
+  }
+
   &__input {
     width: 100%;
     max-width: 370px;
@@ -13,13 +17,21 @@
     height: 55px;
     box-sizing: border-box;
     margin-bottom: 22px;
-    font-size: $font_size;;
+    font-size: $font_size;
     color: #fff;
     text-align: center;
+
+    @include phone{
+      font-size: 22px;
+    }
 
     @include placeholder {
       font-size: $font_size;
       color: #fff;
+      @include phone{
+        font-size: 22px;
+      }
+
     }
   }
 

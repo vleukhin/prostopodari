@@ -360,6 +360,9 @@
 .pp-form {
   font-family: gilroy, sans-serif;
   font-size: 28px; }
+  @media screen and (max-width: 480px) {
+    .pp-form {
+      font-size: 22px; } }
   .pp-form__input {
     width: 100%;
     max-width: 370px;
@@ -374,21 +377,39 @@
     font-size: 28px;
     color: #fff;
     text-align: center; }
+    @media screen and (max-width: 480px) {
+      .pp-form__input {
+        font-size: 22px; } }
     .pp-form__input::placeholder {
       font-size: 28px;
       color: #fff; }
+      @media screen and (max-width: 480px) {
+        .pp-form__input::placeholder {
+          font-size: 22px; } }
     .pp-form__input::-webkit-input-placeholder {
       font-size: 28px;
       color: #fff; }
+      @media screen and (max-width: 480px) {
+        .pp-form__input::-webkit-input-placeholder {
+          font-size: 22px; } }
     .pp-form__input:-moz-placeholder {
       font-size: 28px;
       color: #fff; }
+      @media screen and (max-width: 480px) {
+        .pp-form__input:-moz-placeholder {
+          font-size: 22px; } }
     .pp-form__input::-moz-placeholder {
       font-size: 28px;
       color: #fff; }
+      @media screen and (max-width: 480px) {
+        .pp-form__input::-moz-placeholder {
+          font-size: 22px; } }
     .pp-form__input:-ms-input-placeholder {
       font-size: 28px;
       color: #fff; }
+      @media screen and (max-width: 480px) {
+        .pp-form__input:-ms-input-placeholder {
+          font-size: 22px; } }
   .pp-form textarea.pp-form__input {
     height: 145px;
     margin-bottom: 37px;
@@ -552,6 +573,9 @@
   background-color: #d20833;
   text-align: center;
   padding: 50px 0 79px; }
+  @media screen and (max-width: 480px) {
+    .pp-screen-form {
+      padding: 30px 5%; } }
 
 .pp-screen-partners {
   text-align: center;

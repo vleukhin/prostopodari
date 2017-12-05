@@ -8,6 +8,6 @@
     @include('screens.reasons')
     @include('screens.select')
     @include('screens.basket')
-    {{--@include('screens.form')--}}
+    @include('screens.form')
     {{--@include('screens.partners')--}}
 @endsection
