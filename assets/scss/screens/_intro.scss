@@ -2,14 +2,14 @@
   background-image: url('/images/intro-bg.png');
   background-position: 50% -25px;
   background-repeat: no-repeat;
-  padding-top: 172px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 66px;
+  padding-bottom: 25px;
 
   &__logo {
-    margin-bottom: 66px;
+    margin-bottom: 25px;
 
     img {
       display: block;
@@ -18,7 +18,7 @@
   }
 
   &__present {
-    margin: -80px auto 0;
+    margin: -95px auto 0;
     img {
       display: block;
       margin: 0 auto;

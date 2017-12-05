@@ -101,7 +101,7 @@
   list-style: none;
   font-size: 28px;
   width: 100%;
-  max-width: 538px;
+  max-width: 307px;
   margin: 0;
   padding: 0; }
   .pp-menu__item {
@@ -319,18 +319,18 @@
   background-image: url("/images/intro-bg.png");
   background-position: 50% -25px;
   background-repeat: no-repeat;
-  padding-top: 172px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 66px; }
+  padding-bottom: 25px; }
   .pp-screen-intro__logo {
-    margin-bottom: 66px; }
+    margin-bottom: 25px; }
     .pp-screen-intro__logo img {
       display: block;
       margin: 0 auto; }
   .pp-screen-intro__present {
-    margin: -80px auto 0; }
+    margin: -95px auto 0; }
     .pp-screen-intro__present img {
       display: block;
       margin: 0 auto; }
