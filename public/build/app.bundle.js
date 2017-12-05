@@ -40759,6 +40759,18 @@ module.exports = function (element) {
                 return this.size === size;
             },
 
+            reset: function () {
+                this.size = '';
+                this.diameter = 0;
+                this.height = 0;
+
+                var headerHeight = $('.pp-header').height();
+
+                $('html, body').animate({
+                    scrollTop: $('#select').offset().top - headerHeight,
+                }, 500);
+            },
+
             selectSize: function (size, diameter, height) {
                 this.size = size;
                 this.diameter = diameter;

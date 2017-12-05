@@ -67,6 +67,6 @@
         <div class="pp-screen-select__price">Цена</div>
         <div class="pp-screen-select__price-value">@{{ price }} руб.</div>
         <button class="pp-button pp-button_green">Добавить в корзину</button>
-        <button class="pp-button pp-button_green pp-button_bordered">Выбрать другой</button>
+        <button class="pp-button pp-button_green pp-button_bordered" v-on:click="reset()">Выбрать другой</button>
     </div>
 </div>
