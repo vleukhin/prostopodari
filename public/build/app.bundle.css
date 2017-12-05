@@ -59,15 +59,22 @@
   @media screen and (max-width: 480px) {
     .pp-button {
       font-size: 18px;
-      height: 40px; } }
+      height: 40px;
+      padding: 0 5px; } }
   .pp-button_green {
     background-color: #1e7131; }
     .pp-button_green.pp-button_bordered {
       border: 3px solid #1e7131;
       color: #1e7131; }
+      @media screen and (max-width: 480px) {
+        .pp-button_green.pp-button_bordered {
+          border-width: 2px; } }
   .pp-button_bordered {
     background-color: transparent;
     border: 3px solid #fff; }
+    @media screen and (max-width: 480px) {
+      .pp-button_bordered {
+        border-width: 2px; } }
 
 .pp-caption {
   width: 100%;
@@ -183,10 +190,19 @@
   position: relative;
   width: 100%;
   max-width: 700px; }
+  @media screen and (max-width: 480px) {
+    .pp-reason {
+      font-size: 18px; } }
   .pp-reason__body {
     padding-left: 18px; }
+    @media screen and (max-width: 480px) {
+      .pp-reason__body {
+        padding-left: 20%; } }
   .pp-reason__icon {
     position: absolute; }
+    @media screen and (max-width: 1024px) {
+      .pp-reason__icon img {
+        max-width: 35%; } }
   .pp-reason__title {
     font-weight: 700; }
   .pp-reason__text {
@@ -194,12 +210,24 @@
   .pp-reason:nth-child(1) .pp-reason__icon {
     left: -80px;
     top: -7px; }
+  @media screen and (max-width: 480px) {
+    .pp-reason:nth-child(1) .pp-reason__icon {
+      left: 10px;
+      top: 0; } }
   .pp-reason:nth-child(2) .pp-reason__icon {
     right: -20px;
     top: -10px; }
+  @media screen and (max-width: 480px) {
+    .pp-reason:nth-child(2) .pp-reason__icon {
+      right: 0;
+      top: 0; } }
   .pp-reason:nth-child(3) .pp-reason__icon {
     left: -110px;
     top: -38px; }
+  @media screen and (max-width: 480px) {
+    .pp-reason:nth-child(3) .pp-reason__icon {
+      left: 0;
+      top: 0; } }
 
 .pp-size {
   font-family: gilroy, sans-serif;
@@ -362,6 +390,9 @@
   align-items: center; }
   .pp-screen-reasons .pp-caption {
     margin-bottom: 40px; }
+    @media screen and (max-width: 480px) {
+      .pp-screen-reasons .pp-caption {
+        margin-bottom: 20px; } }
 
 .pp-screen-select {
   font-family: gilroy, sans-serif;
@@ -464,6 +495,9 @@
     font-weight: 700;
     color: #1e7131;
     margin-bottom: 35px; }
+    @media screen and (max-width: 480px) {
+      .pp-screen-partners__partner {
+        font-size: 18px; } }
     .pp-screen-partners__partner a {
       color: inherit;
       text-decoration: none; }

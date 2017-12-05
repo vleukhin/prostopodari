@@ -13,8 +13,16 @@
   width: 100%;
   max-width: 700px;
 
+  @include phone {
+    font-size: $font_phone_size;
+  }
+
   &__body {
     padding-left: 18px;
+
+    @include phone {
+      padding-left: 20%;
+    }
   }
 
   &_right-icon {
@@ -23,6 +31,12 @@
 
   &__icon {
     position: absolute;
+
+    img {
+      @include tablet {
+        max-width: 35%;
+      }
+    }
   }
   &__title {
     font-weight: 700;
@@ -32,23 +46,45 @@
   }
 
   &:nth-child(1) {
-    #{$block}__icon{
+    #{$block}__icon {
       left: -80px;
       top: -7px;
+    }
+
+    @include phone {
+      #{$block}__icon {
+
+        left: 10px;
+        top: 0;
+      }
     }
   }
 
   &:nth-child(2) {
-    #{$block}__icon{
+    #{$block}__icon {
       right: -20px;
       top: -10px;
+    }
+    @include phone {
+      #{$block}__icon {
+
+        right: 0;
+        top: 0;
+      }
     }
   }
 
   &:nth-child(3) {
-    #{$block}__icon{
+    #{$block}__icon {
       left: -110px;
       top: -38px;
+    }
+    @include phone {
+      #{$block}__icon {
+
+        left: 0;
+        top: 0;
+      }
     }
   }
 
