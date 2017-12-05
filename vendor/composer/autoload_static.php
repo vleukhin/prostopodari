@@ -9,6 +9,7 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -18,11 +19,13 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Debug\\' => 24,
+            'Slim\\' => 5,
         ),
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
         ),
         'J' => 
@@ -31,12 +34,17 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
         ),
         'I' => 
         array (
+            'Interop\\Container\\' => 18,
             'Illuminate\\View\\' => 16,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Filesystem\\' => 22,
             'Illuminate\\Events\\' => 18,
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
+        ),
+        'F' => 
+        array (
+            'FastRoute\\' => 10,
         ),
         'D' => 
         array (
@@ -66,6 +74,10 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
         ),
+        'Slim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
@@ -74,6 +86,10 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -81,6 +97,10 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
         'Jenssegers\\Blade\\' => 
         array (
             0 => __DIR__ . '/..' . '/jenssegers/blade/src',
+        ),
+        'Interop\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
         'Illuminate\\View\\' => 
         array (
@@ -106,6 +126,10 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
         ),
+        'FastRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
@@ -120,11 +144,22 @@ class ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Pimple' => 
+            array (
+                0 => __DIR__ . '/..' . '/pimple/pimple/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit551f4af4f1ea393aa0147d4abace63f2::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
