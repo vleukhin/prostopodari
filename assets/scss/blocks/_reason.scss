@@ -23,6 +23,7 @@
   }
 
   &__body {
+    width: 100%;
     padding-left: 18px;
 
     @include tablet-only {
