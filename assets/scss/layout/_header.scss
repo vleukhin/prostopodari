@@ -13,6 +13,13 @@
     max-width: 930px;
     margin: 0 auto;
     line-height: 77px;
+
+    @include tablet {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: none;
+      padding: 0 3%;
+    }
   }
 
   &__button {
