@@ -16,11 +16,20 @@
       margin: 0 auto;
       width: 100%;
       max-width: 564px;
+
+      @include phone {
+        width: 90%;
+      }
     }
   }
 
   &__present {
     margin: -95px auto 0;
+
+    @include phone {
+      margin-top: -30px;
+    }
+
     img {
       display: block;
       margin: 0 auto;
@@ -29,5 +38,9 @@
 
   &__button {
     margin-top: -46px;
+
+    @include phone {
+      margin-top: 0;
+    }
   }
 }

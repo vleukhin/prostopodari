@@ -22,7 +22,7 @@ $desktop-mini-widrh: 1366px;
 }
 
 @mixin tablet-only {
-  @media screen and (min-width: #{$tablet-mini-width}) and (max-width: #{$tablet-width}) {
+  @media screen and (min-width: #{$phone-width}) and (max-width: #{$tablet-width}) {
     @content;
   }
 }

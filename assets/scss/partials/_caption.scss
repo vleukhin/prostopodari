@@ -10,5 +10,9 @@
   &__text {
     display: block;
     margin: 0 auto;
+
+    @include phone{
+      width: 60%;
+    }
   }
 }

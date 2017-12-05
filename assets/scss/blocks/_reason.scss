@@ -13,16 +13,25 @@
   width: 100%;
   max-width: 700px;
 
+  @include tablet-only {
+    font-size: 28px;
+  }
+
   @include phone {
-    font-size: $font_phone_size;
+    font-size: 13px;
+    margin-bottom: 18px;
   }
 
   &__body {
     padding-left: 18px;
 
-    @include phone {
-      padding-left: 20%;
+    @include tablet-only {
+      padding-left: 100px;
     }
+    @include phone {
+      padding-left: 15%;
+    }
+
   }
 
   &_right-icon {
@@ -32,17 +41,24 @@
   &__icon {
     position: absolute;
 
-    img {
-      @include tablet {
-        max-width: 35%;
-      }
+    @include tablet-only {
+      max-width: 20%;
     }
+    @include phone {
+      max-width: 15%;
+    }
+
   }
+
   &__title {
     font-weight: 700;
   }
   &__text {
     line-height: 31px;
+
+    @include phone {
+      line-height: inherit;
+    }
   }
 
   &:nth-child(1) {
@@ -53,9 +69,17 @@
 
     @include phone {
       #{$block}__icon {
+        max-width: 7%;
 
+        left: 0;
+        top: 7px;
+      }
+    }
+
+    @include tablet-only {
+      #{$block}__icon {
         left: 10px;
-        top: 0;
+        top: 7px;
       }
     }
   }
@@ -67,8 +91,13 @@
     }
     @include phone {
       #{$block}__icon {
-
-        right: 0;
+        right: 10%;
+        top: 0;
+      }
+    }
+    @include tablet-only {
+      #{$block}__icon {
+        right: 25px;
         top: 0;
       }
     }
@@ -81,9 +110,15 @@
     }
     @include phone {
       #{$block}__icon {
-
-        left: 0;
+        left: -10px;
         top: 0;
+      }
+    }
+
+    @include tablet-only {
+      #{$block}__icon {
+        left: -20px;
+        top: 7px;
       }
     }
   }
