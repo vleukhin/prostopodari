@@ -332,7 +332,9 @@
     margin-bottom: 25px; }
     .pp-screen-intro__logo img {
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 100%;
+      max-width: 564px; }
   .pp-screen-intro__present {
     margin: -95px auto 0; }
     .pp-screen-intro__present img {
@@ -476,6 +478,9 @@ a:active {
 
 [v-cloak] {
   display: none; }
+
+img {
+  max-width: 100%; }
 @charset "UTF-8";
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
