@@ -27,6 +27,10 @@
   }
   &__phone {
     font-size: 55px;
+
+    @include phone{
+      font-size: 40px;
+    }
   }
   &__menu {
     display: flex;

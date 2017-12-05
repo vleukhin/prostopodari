@@ -32,6 +32,9 @@
         padding: 0 3%; } }
   .pp-header__phone {
     font-size: 55px; }
+    @media screen and (max-width: 480px) {
+      .pp-header__phone {
+        font-size: 40px; } }
   .pp-header__menu {
     display: flex;
     justify-content: center; }
@@ -53,6 +56,10 @@
   cursor: pointer;
   font-style: normal;
   outline: none; }
+  @media screen and (max-width: 480px) {
+    .pp-button {
+      font-size: 18px;
+      height: 40px; } }
   .pp-button_green {
     background-color: #1e7131; }
     .pp-button_green.pp-button_bordered {
@@ -110,12 +117,18 @@
   max-width: 307px;
   margin: 0;
   padding: 0; }
+  @media screen and (max-width: 480px) {
+    .pp-menu {
+      font-size: 18px; } }
   .pp-menu__item {
     border-bottom: 2px solid #fff;
     text-align: center;
     text-transform: uppercase; }
     .pp-menu__item:last-child {
       border-bottom: none; }
+    @media screen and (max-width: 480px) {
+      .pp-menu__item {
+        border-bottom: 1px solid #fff; } }
   .pp-menu__link {
     color: #fff;
     padding: 10px 0;

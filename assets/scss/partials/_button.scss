@@ -13,6 +13,11 @@
   font-style: normal;
   outline: none;
 
+  @include phone {
+    font-size: $font_phone_size;
+    height: 40px;
+  }
+
   &_green {
     background-color: $color_dark_green;
     &.pp-button_bordered {

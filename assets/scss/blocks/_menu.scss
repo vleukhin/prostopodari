@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
 
+  @include phone{
+    font-size: $font_phone_size;
+  }
+
   &__item {
     border-bottom: 2px solid #fff;
     text-align: center;
@@ -14,6 +18,11 @@
 
     &:last-child {
       border-bottom: none;
+    }
+
+    @include phone{
+      border-bottom: 1px solid #fff;
+
     }
   }
 
