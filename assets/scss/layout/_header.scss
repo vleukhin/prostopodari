@@ -2,9 +2,7 @@
   font-family: gilroy, sans-serif;
   background: $color_red;
   position: fixed;
-  min-height: 107px;
   width: 100%;
-  padding: 28px 0 0;
   z-index: 3;
 
   &__header {
@@ -12,7 +10,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 15px;
     max-width: 930px;
     margin: 0 auto;
     line-height: 77px;
@@ -22,7 +19,7 @@
 
   }
   &__phone {
-    font-size: 78px;
+    font-size: 55px;
   }
   &__menu {
     display: flex;

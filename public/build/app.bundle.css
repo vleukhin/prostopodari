@@ -14,21 +14,18 @@
   font-family: gilroy, sans-serif;
   background: #d20833;
   position: fixed;
-  min-height: 107px;
   width: 100%;
-  padding: 28px 0 0;
   z-index: 3; }
   .pp-header__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 15px;
     max-width: 930px;
     margin: 0 auto;
     line-height: 77px; }
   .pp-header__phone {
-    font-size: 78px; }
+    font-size: 55px; }
   .pp-header__menu {
     display: flex;
     justify-content: center; }
@@ -40,8 +37,8 @@
  */
 .pp-button {
   font-family: gilroy, sans-serif;
-  font-size: 36px;
-  height: 78px;
+  font-size: 28px;
+  height: 58px;
   text-transform: uppercase;
   padding: 0 25px;
   color: #fff;
@@ -71,7 +68,7 @@
 
 .pp-text {
   font-family: gilroy, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   color: #d20833;
   text-align: center;
   line-height: 36px; }
@@ -102,28 +99,28 @@
 .pp-menu {
   display: none;
   list-style: none;
-  font-size: 36px;
+  font-size: 28px;
   width: 100%;
   max-width: 538px;
   margin: 0;
   padding: 0; }
   .pp-menu__item {
-    border-bottom: 4px solid #fff;
+    border-bottom: 2px solid #fff;
     text-align: center;
     text-transform: uppercase; }
     .pp-menu__item:last-child {
       border-bottom: none; }
   .pp-menu__link {
     color: #fff;
-    padding: 24px 0;
+    padding: 10px 0;
     text-decoration: none;
     display: block; }
 
 .pp-burger {
   cursor: pointer;
   float: right;
-  width: 67px;
-  height: 67px;
+  width: 40px;
+  height: 40px;
   position: relative;
   user-select: none;
   z-index: 1001; }
@@ -134,13 +131,13 @@
     opacity: 0; }
   .pp-burger_open .pp-burger__three {
     transform: rotate(-45deg);
-    top: 47px; }
+    top: 28.28427px; }
   .pp-burger > * {
     background: #fff;
     cursor: pointer;
     display: block;
-    width: 66px;
-    height: 3px;
+    width: 40px;
+    height: 2px;
     opacity: 1;
     position: absolute;
     -webkit-transform: rotate(0);
@@ -150,15 +147,15 @@
     top: 0;
     transform-origin: left center; }
   .pp-burger__two {
-    top: 31px;
+    top: 19px;
     transform-origin: left center; }
   .pp-burger__three {
-    top: 63px;
+    top: 38px;
     transform-origin: left center; }
 
 .pp-reason {
   font-family: gilroy, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   color: #1e7131;
   display: flex;
   flex-direction: row;
@@ -189,7 +186,7 @@
 
 .pp-size {
   font-family: gilroy, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   color: #d20833; }
   .pp-size__name {
     font-weight: 700;
@@ -207,7 +204,7 @@
     display: block;
     margin: 0 auto; }
   .pp-carousel__title {
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     color: #1e7131; }
   .pp-carousel__arrow {
@@ -246,7 +243,7 @@
   -o-user-select: none;
   user-select: none;
   font-family: gilroy, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   color: #1e7131; }
   .pp-counter > * {
     display: inline-block; }
@@ -265,7 +262,7 @@
 
 .pp-form {
   font-family: gilroy, sans-serif;
-  font-size: 36px; }
+  font-size: 28px; }
   .pp-form__input {
     width: 100%;
     max-width: 435px;
@@ -277,23 +274,23 @@
     height: 78px;
     box-sizing: border-box;
     margin-bottom: 22px;
-    font-size: 36px;
+    font-size: 28px;
     color: #fff;
     text-align: center; }
     .pp-form__input::placeholder {
-      font-size: 36px;
+      font-size: 28px;
       color: #fff; }
     .pp-form__input::-webkit-input-placeholder {
-      font-size: 36px;
+      font-size: 28px;
       color: #fff; }
     .pp-form__input:-moz-placeholder {
-      font-size: 36px;
+      font-size: 28px;
       color: #fff; }
     .pp-form__input::-moz-placeholder {
-      font-size: 36px;
+      font-size: 28px;
       color: #fff; }
     .pp-form__input:-ms-input-placeholder {
-      font-size: 36px;
+      font-size: 28px;
       color: #fff; }
   .pp-form textarea.pp-form__input {
     height: 145px;
@@ -349,7 +346,7 @@
 
 .pp-screen-select {
   font-family: gilroy, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   padding-bottom: 60px; }
   .pp-screen-select .pp-caption {
@@ -407,7 +404,7 @@
 .pp-screen-basket {
   font-family: gilroy, sans-serif;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   padding-bottom: 65px; }
   .pp-screen-basket__present {
     margin-top: 46px; }
@@ -444,7 +441,7 @@
   padding-bottom: 70px; }
   .pp-screen-partners__partner {
     font-family: gilroy, sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     color: #1e7131;
     margin-bottom: 35px; }
@@ -468,7 +465,7 @@ html, body {
   height: 100%; }
 
 .page {
-  padding-top: 135px; }
+  padding-top: 77px; }
 
 a:active {
   color: inherit; }
