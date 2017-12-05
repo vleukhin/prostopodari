@@ -5,6 +5,11 @@
   width: 100%;
   z-index: 3;
 
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   &__header {
     display: flex;
     flex-direction: row;

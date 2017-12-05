@@ -433,6 +433,9 @@
   position: fixed;
   width: 100%;
   z-index: 3; }
+  .pp-header a {
+    color: #fff;
+    text-decoration: none; }
   .pp-header__header {
     display: flex;
     flex-direction: row;

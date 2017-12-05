@@ -4,7 +4,7 @@
 <header class="pp-header">
     <div class="pp-header__header">
         <div class="pp-header__phone">
-            <i class="fa fa-phone" data-js="phone-icon"></i>
+            <a href="tel:+74952207324"><i class="fa fa-phone" data-js="phone-icon"></i></a>
         </div>
         <button class="pp-header__button pp-button pp-button_bordered" onclick="callMe()">Заказать звонок</button>
         <div class="pp-header__burger pp-burger" onclick="toggleMenu(this, 'pp-burger_open', '.pp-menu')" data-js="burger">
@@ -37,7 +37,7 @@
     <div class="pp-header__callme" id="callme">
        <div class="pp-callme" data-js="callme-form">
            <form action="/call-me" class="pp-form" method="post">
-               <label for="name" class="pp-form__label">+7 (495) 220 7324</label>
+               <label for="name" class="pp-form__label"><a href="tel:+74952207324">+7 (495) 220 7324</a></label>
                <label for="name" class="pp-form__label">Имя</label>
                <input type="text" id="name" name="name" class="pp-form__input"/>
 
