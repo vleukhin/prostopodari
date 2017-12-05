@@ -12,5 +12,5 @@
     <div class="pp-screen-intro__present">
         <img src="/images/present.png" alt="Просто подари">
     </div>
-    <button class="pp-button pp-screen-intro__button">Купить в один клик</button>
+    <button class="pp-button pp-screen-intro__button" data-js="oneclick">Купить в один клик</button>
 </div>

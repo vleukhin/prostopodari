@@ -40782,6 +40782,9 @@ module.exports = function (element) {
                 this.diameter = diameter;
                 this.height = height;
 
+                $('#form').hide();
+                $('#basket').hide();
+
                 setTimeout(function () {
                     var slider = $('.pp-carousel');
                     if (!slider.hasClass('slick-initialized')) {

@@ -6,13 +6,17 @@
     <title>Просто подари</title>
     <link rel="stylesheet" type="text/css" href="/js/slick/slick.css"/>
     <link rel="stylesheet" href="/build/app.bundle.css">
-    <meta property="og:title" content="Просто подари" />
-    <meta property="og:image" content="https://prostopodari.ru/images/present_clear.png" />
+    <meta property="og:title" content="Просто подари"/>
+    <meta property="og:image" content="https://prostopodari.ru/images/present_clear.png"/>
     <meta property="og:description" content="Интернет магазин готового подарка">
     <meta name="description" content="Интернет магазин готового подарка">
     <meta name="format-detection" content="telephone=no">
     <script>
-        if(window.DEVICE_TYPE="",self.screen)scrwidth=screen.width,scrheight=screen.height;else if(self.java){var jkit=java.awt.Toolkit.getDefaultToolkit(),scrsize=jkit.getScreenSize();scrwidth=scrsize.width,scrheight=scrsize.height}scrwidth>0&&scrwidth<669?window.DEVICE_TYPE="phone":scrwidth>668&&scrwidth<1025?window.DEVICE_TYPE="tablet":scrwidth>1025&&(window.DEVICE_TYPE="desktop");
+        if (window.DEVICE_TYPE = "", self.screen) scrwidth = screen.width, scrheight = screen.height; else if (self.java) {
+            var jkit = java.awt.Toolkit.getDefaultToolkit(), scrsize = jkit.getScreenSize();
+            scrwidth = scrsize.width, scrheight = scrsize.height
+        }
+        scrwidth > 0 && scrwidth < 669 ? window.DEVICE_TYPE = "phone" : scrwidth > 668 && scrwidth < 1025 ? window.DEVICE_TYPE = "tablet" : scrwidth > 1025 && (window.DEVICE_TYPE = "desktop");
     </script>
 </head>
 <body>
@@ -39,6 +43,17 @@
 
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top - headerHeight,
+            }, 500);
+        });
+
+        $('[data-js=oneclick]').on('click', function (event) {
+            event.preventDefault();
+            var form = $('#form');
+
+            form.show();
+
+            $('html, body').animate({
+                scrollTop: form.offset().top - headerHeight,
             }, 500);
         });
     })(window.jQuery);
