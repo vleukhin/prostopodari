@@ -32,5 +32,9 @@
   &__button {
     width: 100%;
     max-width: 370px;
+
+    @include phone {
+      max-width: 230px;
+    }
   }
 }

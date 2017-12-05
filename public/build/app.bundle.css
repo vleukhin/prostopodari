@@ -544,6 +544,9 @@
   .pp-screen-basket__button {
     width: 100%;
     max-width: 370px; }
+    @media screen and (max-width: 480px) {
+      .pp-screen-basket__button {
+        max-width: 230px; } }
 
 .pp-screen-form {
   background-color: #d20833;
