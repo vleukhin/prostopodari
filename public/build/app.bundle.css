@@ -691,6 +691,8 @@
       .pp-screen-partners__partner a:visited {
         color: inherit;
         text-decoration: none; }
+      .pp-screen-partners__partner a:hover {
+        text-decoration: underline; }
   .pp-screen-partners .pp-caption {
     margin-bottom: 63px; }
     @media screen and (max-width: 480px) {
