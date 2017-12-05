@@ -92,7 +92,7 @@
     }
     @include phone {
       #{$block}__icon {
-        right: 10%;
+        right: 0;
         top: 0;
       }
     }
