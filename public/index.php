@@ -22,8 +22,11 @@ $app->get('/', function (Request $request, Response $response) {
 });
 
 $app->post('/call-me', function (Request $request, Response $response){
+    $phone = $request->getParam('phone');
 
-    mail(getenv('EMAIL'), 'Вас просят перезвонить с лендинга ПростоПодари', "Клиент оставил телефон: $request->");
+    $result = mail(getenv('EMAIL'), 'Вас просят перезвонить с лендинга ПростоПодари', "Клиент оставил телефон: $phone");
+
+    return $response->withRedirect('/');
 });
 
 $app->run();

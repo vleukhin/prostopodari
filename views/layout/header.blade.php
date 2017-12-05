@@ -36,7 +36,7 @@
 
     <div class="pp-header__callme" id="callme">
        <div class="pp-callme" data-js="callme-form">
-           <div class="pp-form">
+           <form action="/call-me" class="pp-form" method="post">
                <label for="name" class="pp-form__label">+7 (495) 220 7324</label>
                <label for="name" class="pp-form__label">Имя</label>
                <input type="text" id="name" name="name" class="pp-form__input"/>
@@ -45,7 +45,7 @@
                <input type="text" id="phone" name="phone" class="pp-form__input" placeholder="+7 ___ ___ ____"/>
 
                <button class="pp-button">Отправить</button>
-           </div>
+           </form>
        </div>
     </div>
 
