@@ -5,6 +5,11 @@
   padding-top: 56px;
   padding-bottom: 70px;
 
+  @include phone{
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
   &__partner {
     font-family: gilroy, sans-serif;
     font-size: $font_size;
@@ -14,6 +19,7 @@
 
     @include phone{
       font-size: $font_phone_size;
+      margin-bottom: 12px;
     }
 
     a {
@@ -29,5 +35,15 @@
 
   .pp-caption {
     margin-bottom: 63px;
+
+    @include phone{
+      margin-bottom: 20px;
+    }
+
+    img {
+      @include phone {
+        width: 40%;
+      }
+    }
   }
 }

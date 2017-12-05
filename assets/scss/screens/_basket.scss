@@ -37,4 +37,12 @@
       max-width: 230px;
     }
   }
+
+  .pp-caption {
+    img {
+      @include phone {
+        width: 40%;
+      }
+    }
+  }
 }
