@@ -2,7 +2,6 @@
 @import "inc/adaptive-mixins";
 @import "inc/mixins";
 @import "inc/fonts";
-@import "layout/header";
 /**
  * Partials
  */
@@ -20,6 +19,10 @@
 @import "blocks/carousel";
 @import "blocks/counter";
 @import "blocks/form";
+/**
+ * Layout
+ */
+@import "layout/header";
 /**
  * Screens
  */

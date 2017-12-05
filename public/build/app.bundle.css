@@ -10,37 +10,6 @@
   font-weight: normal;
   font-style: normal; }
 
-.pp-header {
-  font-family: gilroy, sans-serif;
-  background: #1e7131;
-  position: fixed;
-  width: 100%;
-  z-index: 3; }
-  .pp-header__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 930px;
-    margin: 0 auto;
-    line-height: 77px; }
-    @media screen and (max-width: 1024px) {
-      .pp-header__header {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: none;
-        padding: 0 3%; } }
-  .pp-header__phone {
-    font-size: 55px; }
-    @media screen and (max-width: 480px) {
-      .pp-header__phone {
-        font-size: 40px; } }
-  .pp-header__menu {
-    display: flex;
-    justify-content: center; }
-  .pp-header__menu-switcher {
-    font-size: 78px; }
-
 /**
  * Partials
  */
@@ -60,7 +29,7 @@
     .pp-button {
       font-size: 18px;
       height: 40px;
-      padding: 0 5px; } }
+      padding: 0 10px; } }
   .pp-button_green {
     background-color: #1e7131; }
     .pp-button_green.pp-button_bordered {
@@ -446,6 +415,43 @@
       vertical-align: middle; }
     .pp-form__checkbox span {
       vertical-align: middle; }
+
+/**
+ * Layout
+ */
+.pp-header {
+  font-family: gilroy, sans-serif;
+  background: #1e7131;
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  .pp-header__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 930px;
+    margin: 0 auto;
+    line-height: 77px; }
+    @media screen and (max-width: 1024px) {
+      .pp-header__header {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: none;
+        padding: 0 3%; } }
+  .pp-header__button {
+    font-size: 20px;
+    height: 45px; }
+  .pp-header__phone {
+    font-size: 55px; }
+    @media screen and (max-width: 480px) {
+      .pp-header__phone {
+        font-size: 40px; } }
+  .pp-header__menu {
+    display: flex;
+    justify-content: center; }
+  .pp-header__menu-switcher {
+    font-size: 78px; }
 
 /**
  * Screens
