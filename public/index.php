@@ -21,4 +21,9 @@ $app->get('/', function (Request $request, Response $response) {
     return $this->blade->render('landing');
 });
 
+$app->post('/call-me', function (Request $request, Response $response){
+
+    mail(getenv('EMAIL'), 'Вас просят перезвонить с лендинга ПростоПодари', "Клиент оставил телефон: $request->");
+});
+
 $app->run();
