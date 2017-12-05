@@ -40751,7 +40751,18 @@ module.exports = function (element) {
             size: '',
             diameter: 0,
             height: 0,
-            price: 2500,
+        },
+
+        computed: {
+            price: function () {
+                var prices = {
+                    small: 1500,
+                    medium: 2500,
+                    large: 3500,
+                };
+
+                return prices[this.size];
+            }
         },
 
         methods: {
@@ -40763,12 +40774,7 @@ module.exports = function (element) {
                 this.size = '';
                 this.diameter = 0;
                 this.height = 0;
-
-                var headerHeight = $('.pp-header').height();
-
-                $('html, body').animate({
-                    scrollTop: $('#select').offset().top - headerHeight,
-                }, 500);
+                this.scrollTo($('#select'));
             },
 
             selectSize: function (size, diameter, height) {
@@ -40778,17 +40784,27 @@ module.exports = function (element) {
 
                 setTimeout(function () {
                     var slider = $('.pp-carousel');
-                    if (!slider.hasClass('slick-initialized')){
+                    if (!slider.hasClass('slick-initialized')) {
                         slider.slick({
                             // centerMode: true,
                             centerPadding: '100px',
-                            slidesToShow: DEVICE_TYPE == 'desktop' ? 3 : 1,
+                            slidesToShow: DEVICE_TYPE === 'desktop' ? 3 : 1,
                             prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
                             nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
                         });
                     }
-                }, 500)
+                    this.scrollTo($('.pp-screen-select__present'));
 
+                }.bind(this), 300)
+
+            },
+
+            scrollTo: function (element) {
+                var headerHeight = $('.pp-header').height();
+
+                $('html, body').animate({
+                    scrollTop: element.offset().top - headerHeight,
+                }, 500);
             }
         }
     });

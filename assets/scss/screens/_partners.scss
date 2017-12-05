@@ -2,10 +2,11 @@
   text-align: center;
   background-image: url('/images/intro-bg.png');
   background-position: 50% 603px;
-  padding-top: 56px;
+  margin-top: 56px;
   padding-bottom: 70px;
 
   @include phone {
+    margin-top: 10px;
     padding-bottom: 30px;
     padding-top: 20px;
   }

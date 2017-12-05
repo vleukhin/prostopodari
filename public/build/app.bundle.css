@@ -569,6 +569,9 @@
   font-size: 28px;
   text-align: center;
   padding-bottom: 60px; }
+  @media screen and (max-width: 480px) {
+    .pp-screen-select {
+      padding-bottom: 0; } }
   .pp-screen-select .pp-caption {
     margin-bottom: 25px; }
   .pp-screen-select__title {
@@ -625,6 +628,7 @@
         max-width: 230px; } }
 
 .pp-screen-basket {
+  display: none;
   font-family: gilroy, sans-serif;
   text-align: center;
   font-size: 28px;
@@ -658,6 +662,7 @@
       width: 40%; } }
 
 .pp-screen-form {
+  display: none;
   background-color: #d20833;
   text-align: center;
   padding: 50px 0 79px; }
@@ -669,10 +674,11 @@
   text-align: center;
   background-image: url("/images/intro-bg.png");
   background-position: 50% 603px;
-  padding-top: 56px;
+  margin-top: 56px;
   padding-bottom: 70px; }
   @media screen and (max-width: 480px) {
     .pp-screen-partners {
+      margin-top: 10px;
       padding-bottom: 30px;
       padding-top: 20px; } }
   .pp-screen-partners__partner {
