@@ -442,6 +442,12 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 25px; }
+  @media screen and (max-width: 480px) {
+    .pp-screen-intro {
+      background-image: url("/images/intro-bg-phone.png");
+      padding-top: 30px;
+      background-position-y: 20px;
+      background-size: contain; } }
   .pp-screen-intro__logo {
     margin-bottom: 25px; }
     .pp-screen-intro__logo img {
@@ -451,7 +457,8 @@
       max-width: 564px; }
       @media screen and (max-width: 480px) {
         .pp-screen-intro__logo img {
-          width: 90%; } }
+          width: 64%;
+          margin-bottom: 15px; } }
   .pp-screen-intro__present {
     margin: -95px auto 0; }
     @media screen and (max-width: 480px) {
@@ -465,6 +472,10 @@
     @media screen and (max-width: 480px) {
       .pp-screen-intro__button {
         margin-top: 0; } }
+  @media screen and (max-width: 480px) {
+    .pp-screen-intro .pp-text {
+      font-size: 21px;
+      line-height: inherit; } }
 
 .pp-screen-reasons {
   display: flex;

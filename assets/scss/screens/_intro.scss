@@ -8,6 +8,13 @@
   align-items: center;
   padding-bottom: 25px;
 
+  @include phone {
+    background-image: url('/images/intro-bg-phone.png');
+    padding-top: 30px;
+    background-position-y: 20px;
+    background-size: contain;
+  }
+
   &__logo {
     margin-bottom: 25px;
 
@@ -18,7 +25,8 @@
       max-width: 564px;
 
       @include phone {
-        width: 90%;
+        width: 64%;
+        margin-bottom: 15px;
       }
     }
   }
@@ -41,6 +49,13 @@
 
     @include phone {
       margin-top: 0;
+    }
+  }
+
+  @include phone {
+    .pp-text {
+      font-size: 21px;
+      line-height: inherit;
     }
   }
 }
