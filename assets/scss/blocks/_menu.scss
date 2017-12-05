@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
 
-  @include phone{
+  @include phone {
     font-size: $font_phone_size;
   }
 
@@ -20,9 +20,8 @@
       border-bottom: none;
     }
 
-    @include phone{
+    @include phone {
       border-bottom: 1px solid #fff;
-
     }
   }
 
