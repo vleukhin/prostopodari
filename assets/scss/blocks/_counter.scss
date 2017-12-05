@@ -2,7 +2,7 @@
   @include unselectable;
 
   font-family: gilroy, sans-serif;
-  font-size: 36px;
+  font-size: $font_size;
   color: $color_dark_green;
 
   > * {
