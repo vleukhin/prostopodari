@@ -4,16 +4,16 @@
 
   &__input {
     width: 100%;
-    max-width: 435px;
+    max-width: 370px;
     padding: 10px;
     background-color: transparent;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     display: block;
     margin: 0 auto;
-    height: 78px;
+    height: 55px;
     box-sizing: border-box;
     margin-bottom: 22px;
-    font-size: $font_size;
+    font-size: $font_size;;
     color: #fff;
     text-align: center;
 
@@ -34,7 +34,7 @@
     font-weight: 700;
     display: block;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__checkbox {
