@@ -32,6 +32,17 @@
     @include phone {
       font-size: 40px;
     }
+
+    .fa {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      transition: .25s ease-in-out;
+
+      &.active {
+        transform: rotate(137deg);
+        transition: .25s ease-in-out;
+      }
+    }
   }
   &__menu {
     display: flex;
@@ -39,5 +50,15 @@
   }
   &__menu-switcher {
     font-size: 78px;
+  }
+  &__callme {
+    padding: 0 5%;
+    .pp-form{
+      padding-bottom: 20px;
+    }
+    .pp-button{
+      width: 100%;
+      max-width: 370px;
+    }
   }
 }

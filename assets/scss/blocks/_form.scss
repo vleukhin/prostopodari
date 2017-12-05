@@ -1,6 +1,7 @@
 .pp-form {
   font-family: gilroy, sans-serif;
   font-size: $font_size;
+  text-align: center;
 
   @include phone {
     font-size: 22px;
@@ -20,6 +21,7 @@
     font-size: $font_size;
     color: #fff;
     text-align: center;
+    outline: none;
 
     @include phone {
       font-size: 22px;

@@ -13,6 +13,7 @@
 
   &_open {
     #{$block}__one {
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
     }
 
@@ -22,6 +23,7 @@
     }
 
     #{$block}__three {
+      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
       top: $size * 0.70710678118 /* sin(45)*/;
     }

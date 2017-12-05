@@ -10373,6 +10373,7 @@ __webpack_require__(12);
 __webpack_require__(14);
 
 window.toggleMenu  = __webpack_require__(15);
+window.callMe  = __webpack_require__(30);
 window.Size = __webpack_require__(16)('#select');
 window.Basket = __webpack_require__(17)('#basket');
 
@@ -40712,6 +40713,13 @@ $.fn.extend({
  * E-mail: vleukhin@ya.ru
  */
 module.exports = function (element, toggleClass, menu) {
+    var phone = $('[data-js=phone-icon]');
+
+    if (phone.hasClass('active')){
+        phone.removeClass('active');
+        $('[data-js=callme-form]').hide();
+    }
+
     var $element = $(element);
     var $menu = $(menu);
 
@@ -40723,6 +40731,7 @@ module.exports = function (element, toggleClass, menu) {
     }
 
     $element.toggleClass(toggleClass);
+    $menu.toggleClass('active')
 };
 
 /***/ }),
@@ -40795,6 +40804,47 @@ module.exports = function (element) {
 
         }
     });
+};
+
+/***/ }),
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Viktor Leukhin.
+ * Tel: +7-926-797-5419
+ * E-mail: vleukhin@ya.ru
+ */
+module.exports = function () {
+    var menu = $('[data-js=menu]');
+    if (menu.hasClass('active')) {
+        menu.removeClass('active');
+        menu.hide();
+        $('[data-js=burger]').removeClass('pp-burger_open');
+    }
+
+    var phone = $('[data-js=phone-icon]');
+    var form = $('[data-js=callme-form]');
+    phone.toggleClass('active');
+
+    if (!phone.hasClass('active')) {
+        form.slideUp();
+    }
+    else {
+        form.slideDown();
+    }
 };
 
 /***/ })

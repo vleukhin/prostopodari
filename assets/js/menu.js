@@ -4,6 +4,13 @@
  * E-mail: vleukhin@ya.ru
  */
 module.exports = function (element, toggleClass, menu) {
+    var phone = $('[data-js=phone-icon]');
+
+    if (phone.hasClass('active')){
+        phone.removeClass('active');
+        $('[data-js=callme-form]').hide();
+    }
+
     var $element = $(element);
     var $menu = $(menu);
 
@@ -15,4 +22,5 @@ module.exports = function (element, toggleClass, menu) {
     }
 
     $element.toggleClass(toggleClass);
+    $menu.toggleClass('active')
 };
