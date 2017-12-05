@@ -15,6 +15,7 @@
     </script>
 </head>
 <body>
+@include('layout.counters')
 @include('layout.header')
 <div class="page">
     <div class="content">
