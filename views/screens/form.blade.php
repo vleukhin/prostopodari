@@ -2,7 +2,7 @@
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
 <div class="pp-screen-form" id="form">
-    <form class="pp-form">
+    <form class="pp-form" method="POST" action="/order">
         <label for="name" class="pp-form__label">Имя</label>
         <input type="text" id="name" name="name" class="pp-form__input"/>
 
@@ -37,7 +37,7 @@
         <form id='ya-form' method="POST" target="_blank" action="https://money.yandex.ru/quickpay/confirm.xml">
             <input name="receiver" value="410015834130416" type="hidden">
             <input name="targets" value="Оплата заказа на сайте prostopodari.ru" type="hidden">
-            <input name="successURL" value="http://prostopodari.ru" type="hidden">
+            <input name="successURL" value="http://prostopodari.ru#success" type="hidden">
             <input name="quickpay-form" value="shop" type="hidden">
             <input name="paymentType" value="AC" type="hidden">
             <input name="need-email" value="on" type="hidden">

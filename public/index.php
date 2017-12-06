@@ -21,11 +21,35 @@ $app->get('/', function (Request $request, Response $response) {
     return $this->blade->render('landing');
 });
 
-$app->post('/call-me', function (Request $request, Response $response){
+$app->post('/call-me', function (Request $request, Response $response) {
     $phone = $request->getParam('phone');
     $name = $request->getParam('name');
 
     $result = mail(getenv('EMAIL'), 'Вас просят перезвонить с лендинга ПростоПодари', "Имя: $name <br/> Телефон: $phone");
+
+    return $response->withRedirect('/#success');
+});
+
+$app->post('/order', function (Request $request, Response $response) {
+    $phone = $request->getParam('phone', '');
+    $email = $request->getParam('name', '');
+    $name = $request->getParam('name', '');
+    $adress = $request->getParam('adress', '');
+    $small = $request->getParam('small', 0);
+    $medium = $request->getParam('medium', 0);
+    $large = $request->getParam('large', 0);
+
+    $text = "
+        Имя: $name <br/> 
+        Телефон: $phone <br/> 
+        Email: $email <br/> 
+        Адрес: $adress <br/> 
+        Small: $small <br/> 
+        Medium: $medium <br/> 
+        Large: $large <br/> 
+    ";
+
+    $result = mail(getenv('EMAIL'), 'Заказ с сайта ПростоПодари', $text);
 
     return $response->withRedirect('/#success');
 });

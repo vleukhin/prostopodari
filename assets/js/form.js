@@ -43,6 +43,24 @@ module.exports = function (element) {
                         return true;
                     }
 
+                    form.append($('<input/>', {
+                        type: 'hidden',
+                        name: 'small',
+                        value: Basket.counts.small,
+                    }));
+
+                    form.append($('<input/>', {
+                        type: 'hidden',
+                        name: 'medium',
+                        value: Basket.counts.medium,
+                    }));
+
+                    form.append($('<input/>', {
+                        type: 'hidden',
+                        name: 'large',
+                        value: Basket.counts.large,
+                    }));
+
                     form.submit();
                 }
             },
