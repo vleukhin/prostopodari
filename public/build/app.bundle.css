@@ -586,7 +586,8 @@
   .pp-screen-select__present {
     margin: 40px 0; }
   .pp-screen-select__text {
-    color: #1e7131; }
+    color: #1e7131;
+    margin-bottom: 40px; }
   .pp-screen-select__separator {
     height: 60px;
     width: 3px;

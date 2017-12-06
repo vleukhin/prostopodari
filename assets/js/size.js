@@ -50,7 +50,8 @@ module.exports = function (element) {
                 $('#basket').hide();
 
                 setTimeout(function () {
-                    var slider = $('.pp-carousel');
+                    var slider = $('#carousel-' + this.size);
+
                     if (!slider.hasClass('slick-initialized')) {
                         slider.slick({
                             // centerMode: true,
@@ -62,7 +63,7 @@ module.exports = function (element) {
                     }
                     this.scrollTo($('.pp-screen-select__present'));
 
-                }.bind(this), 300)
+                }.bind(this), 200)
 
             },
 

@@ -26,7 +26,7 @@
     </div>
     <div class="pp-screen-select__info" v-show="diameter != 0">
         <div class="pp-screen-select__present">
-            <img :src="image" alt="Просто подари">
+            <img :src="image" alt="Просто подари" v-if="diameter != 0">
         </div>
         <div class="pp-screen-select__text">
             Оригинальная упаковка <br>
@@ -35,31 +35,82 @@
             <img src="/images/icon_height_green.png" alt=""> @{{ height }} см
         </span>
         </div>
-        <div class="pp-screen-select__separator"></div>
-        <div class="pp-carousel">
+        <div class="pp-carousel" v-show="isSelected('small')" id="carousel-small">
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
                     <img src="/images/content/1.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Пряник</div>
+                <div class="pp-carousel__title">Маленький</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
                     <img src="/images/content/1.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Драник</div>
+                <div class="pp-carousel__title">Маленький</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
                     <img src="/images/content/1.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Веник</div>
+                <div class="pp-carousel__title">Маленький</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
                     <img src="/images/content/1.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Хуяник</div>
+                <div class="pp-carousel__title">Маленький</div>
+            </div>
+        </div>
+        <div class="pp-carousel" v-show="isSelected('medium')" id="carousel-medium">
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Средний</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Средний</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Средний</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Средний</div>
+            </div>
+        </div>
+        <div class="pp-carousel" v-show="isSelected('large')" id="carousel-large">
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Большой</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Большой</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Большой</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/1.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Большой</div>
             </div>
         </div>
     </div>

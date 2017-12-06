@@ -37,7 +37,7 @@
 <script>
     (function ($) {
         $(document).ready(function () {
-            $('#phone').mask("+7 999 999 9999", {placeholder: "+7 ___ ___ ____"});
+//            $('#phone').mask("+7 999 999 9999", {placeholder: "+7 ___ ___ ____"});
         });
 
         var headerHeight = $('.pp-header').height();
