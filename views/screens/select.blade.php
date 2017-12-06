@@ -40,25 +40,25 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/1.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Маленький</div>
+                <div class="pp-carousel__title">Мед натуральный "Таежный" 100 гр.</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/2.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Маленький</div>
+                <div class="pp-carousel__title">Варенье из сосновых шишек 125 гр.</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/4.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Маленький</div>
+                <div class="pp-carousel__title">Пряничный человечек (имбирное печенье)</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/8.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Маленький</div>
+                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3  шт.</div>
             </div>
         </div>
         <div class="pp-carousel" v-show="isSelected('medium')" id="carousel-medium">
@@ -66,25 +66,31 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/1.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Средний</div>
+                <div class="pp-carousel__title">Мед натуральный "Таежный" 100 гр.</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/2.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Средний</div>
+                <div class="pp-carousel__title">Варенье из сосновых шишек 125 гр.</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/4.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Средний</div>
+                <div class="pp-carousel__title">Пряничный человечек (имбирное печенье)</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/5.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Средний</div>
+                <div class="pp-carousel__title">Снежный шар диаметр 10 см - диаметр, 12 - высота</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/8.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3  шт.</div>
             </div>
         </div>
         <div class="pp-carousel" v-show="isSelected('large')" id="carousel-large">
@@ -92,25 +98,43 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/1.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Большой</div>
+                <div class="pp-carousel__title">Мед натуральный "Таежный" 100 гр.</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/2.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Большой</div>
+                <div class="pp-carousel__title">Варенье из сосновых шишек 125 гр.</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/3.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Большой</div>
+                <div class="pp-carousel__title">Рождественский кулич GranDucale Panettone </div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
-                    <img src="/images/content/1.png" alt="">
+                    <img src="/images/content/4.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Большой</div>
+                <div class="pp-carousel__title">Пряничный человечек (имбирное печенье)</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/6.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Снежный шар диаметр 15 см - диаметр, 17 - высота</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/7.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Фирменная кружка CoffeCup с логотипом</div>
+            </div>
+            <div class="pp-carousel__item">
+                <div class="pp-carousel__image">
+                    <img src="/images/content/8.png" alt="">
+                </div>
+                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3  шт.</div>
             </div>
         </div>
     </div>

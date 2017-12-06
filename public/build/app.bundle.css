@@ -3526,12 +3526,14 @@ body.stop-scrolling {
   max-width: 1000px;
   margin: 0 auto;
   position: relative; }
-  .pp-carousel__item img {
-    display: block;
-    margin: 0 auto; }
-    @media screen and (max-width: 480px) {
-      .pp-carousel__item img {
-        max-height: 180px; } }
+  .pp-carousel__item {
+    outline: none; }
+    .pp-carousel__item img {
+      display: block;
+      margin: 0 auto; }
+      @media screen and (max-width: 480px) {
+        .pp-carousel__item img {
+          max-height: 180px; } }
   .pp-carousel__title {
     font-size: 28px;
     text-align: center;
