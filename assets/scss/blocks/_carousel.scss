@@ -7,6 +7,9 @@
 
   &__item {
     outline: none;
+  }
+
+  &__image {
     img {
       display: block;
       margin: 0 auto;
@@ -20,6 +23,11 @@
     font-size: $font_size;
     text-align: center;
     color: $color_dark_green;
+
+    img {
+      display: inline-block;
+      width: 20px;
+    }
   }
 
   &__arrow {
