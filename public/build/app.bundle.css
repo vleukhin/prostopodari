@@ -3847,6 +3847,9 @@ body.stop-scrolling {
       margin: 0 10%; }
   .pp-screen-select__present {
     margin: 40px 0; }
+    @media screen and (max-width: 480px) {
+      .pp-screen-select__present {
+        margin: 30px auto 0; } }
   .pp-screen-select__text {
     color: #1e7131;
     margin-bottom: 40px; }
@@ -3925,6 +3928,9 @@ body.stop-scrolling {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+    @media screen and (max-width: 1024px) {
+      .pp-screen-basket__items {
+        flex-direction: column; } }
   @media screen and (max-width: 480px) {
     .pp-screen-basket .pp-caption img {
       width: 40%; } }

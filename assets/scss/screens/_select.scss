@@ -29,6 +29,10 @@
 
   &__present {
     margin: 40px 0;
+
+    @include phone {
+      margin: 30px auto 0;
+    }
   }
 
   &__text {
