@@ -42,12 +42,18 @@
     }
   }
 
+  &__shipping {
+    font-size: 12px;
+    margin-top: 10px;
+    color: lighten($color_red, 10%);
+  }
+
   &__items {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-    @include tablet{
+    @include tablet {
       flex-direction: column;
     }
   }

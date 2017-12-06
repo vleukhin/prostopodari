@@ -3927,6 +3927,10 @@ body.stop-scrolling {
     @media screen and (max-width: 480px) {
       .pp-screen-basket__button {
         max-width: 230px; } }
+  .pp-screen-basket__shipping {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #f61746; }
   .pp-screen-basket__items {
     display: flex;
     flex-direction: row;
