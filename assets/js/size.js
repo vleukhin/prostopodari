@@ -61,7 +61,6 @@ module.exports = function (element) {
                             nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
                         });
                     }
-                    this.scrollTo($('.pp-screen-select__present'));
 
                 }.bind(this), 200)
 
