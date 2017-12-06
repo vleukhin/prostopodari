@@ -27,7 +27,7 @@ $app->post('/call-me', function (Request $request, Response $response){
 
     $result = mail(getenv('EMAIL'), 'Вас просят перезвонить с лендинга ПростоПодари', "Имя: $name <br/> Телефон: $phone");
 
-    return $response->withRedirect('/');
+    return $response->withRedirect('/#success');
 });
 
 $app->run();

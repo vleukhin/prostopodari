@@ -38,6 +38,24 @@
     (function ($) {
         $(document).ready(function () {
             $('[name=phone]').mask("+7 999 999 9999", {placeholder: "+7 ___ ___ ____"});
+
+
+            $('.pp-header .pp-form').on('submit', function () {
+                var form = $(this);
+
+                if (form.find('[name=phone]').val().length < 15) {
+                    swal('Телефонный номер указан не верно');
+                    form.find('[name=phone]').focus();
+                    return false;
+                }
+
+                return true;
+            })
+
+            if (location.hash === '#success'){
+                swal('Ваша заявка принята, в ближайшее время мы свяжемся с вами');
+                location.hash = '';
+            }
         });
 
         var headerHeight = $('.pp-header').height();

@@ -3930,6 +3930,7 @@ body.stop-scrolling {
       width: 40%; } }
 
 .pp-screen-form {
+  display: none;
   background-color: #d20833;
   text-align: center;
   padding: 50px 0 79px; }

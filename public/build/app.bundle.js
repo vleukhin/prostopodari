@@ -42248,7 +42248,7 @@ module.exports = function (element) {
 
         computed: {
             sum: function () {
-                return 250
+                return Basket.sum;
             }
         },
 
