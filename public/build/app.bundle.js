@@ -40301,7 +40301,7 @@ $.fn.extend({
 	caret: function(begin, end) {
 		var range;
 
-		if (this.length === 0 || this.is(":hidden")) {
+		if (this.length === 0 || this.is(":hidden") || this.get(0) !== document.activeElement) {
 			return;
 		}
 
@@ -40360,6 +40360,8 @@ $.fn.extend({
 		tests = [];
 		partialPosition = len = mask.length;
 		firstNonMaskPos = null;
+
+		mask = String(mask);
 
 		$.each(mask.split(""), function(i, c) {
 			if (c == '?') {
@@ -40463,32 +40465,42 @@ $.fn.extend({
 				}
 			}
 
-            function androidInputEvent(e) {
-                var curVal = input.val();
-                var pos = input.caret();
-                if (oldVal && oldVal.length && oldVal.length > curVal.length ) {
-                    // a deletion or backspace happened
-                    checkVal(true);
-                    while (pos.begin > 0 && !tests[pos.begin-1])
-                          pos.begin--;
-                    if (pos.begin === 0)
-                    {
-                       while (pos.begin < firstNonMaskPos && !tests[pos.begin])
-                          pos.begin++;
-                    }
-                    input.caret(pos.begin,pos.begin);
-                } else {
-                    var pos2 = checkVal(true);
-                    while (pos.begin < len && !tests[pos.begin])
-                          pos.begin++;
+			function androidInputEvent(e) {
+				var curVal = input.val();
+				var pos = input.caret();
+				if (oldVal && oldVal.length && oldVal.length > curVal.length ) {
+					// a deletion or backspace happened
+					checkVal(true);
+					while (pos.begin > 0 && !tests[pos.begin-1])
+						pos.begin--;
+					if (pos.begin === 0)
+					{
+						while (pos.begin < firstNonMaskPos && !tests[pos.begin])
+							pos.begin++;
+					}
+					input.caret(pos.begin,pos.begin);
+				} else {
+					var pos2 = checkVal(true);
+					var lastEnteredValue = curVal.charAt(pos.begin);
+					if (pos.begin < len){
+						if(!tests[pos.begin]){
+							pos.begin++;
+							if(tests[pos.begin].test(lastEnteredValue)){
+								pos.begin++;
+							}
+						}else{
+							if(tests[pos.begin].test(lastEnteredValue)){
+								pos.begin++;
+							}
+						}
+					}
+					input.caret(pos.begin,pos.begin);
+				}
+				tryFireCompleted();
+			}
 
-                    input.caret(pos.begin,pos.begin);
-                }
 
-                tryFireCompleted();
-            }
-
-            function blurEvent(e) {
+			function blurEvent(e) {
                 checkVal();
 
                 if (input.val() != focusText)
