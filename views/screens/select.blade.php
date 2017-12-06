@@ -134,7 +134,7 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/8.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3  шт.</div>
+                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28гр. × 3  шт.</div>
             </div>
         </div>
     </div>
