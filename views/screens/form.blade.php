@@ -22,10 +22,6 @@
         </div>
         <div class="pp-form__checkbox">
             <div class="pp-checkbox pp-checkbox_white"></div>
-            <span>На карту Сбербанка</span>
-        </div>
-        <div class="pp-form__checkbox">
-            <div class="pp-checkbox pp-checkbox_white"></div>
             <span>Яндекс Деньги</span>
         </div>
     </form>
