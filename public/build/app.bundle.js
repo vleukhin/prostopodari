@@ -40953,7 +40953,7 @@ module.exports = function (element) {
         el: element,
 
         data: {
-            payment: '',
+            payment: 'cash',
         },
 
         computed: {
@@ -40965,6 +40965,18 @@ module.exports = function (element) {
         methods: {
             isSelected: function (payment) {
                 return this.payment === payment;
+            },
+
+            submit: function () {
+                console.log(this.sum);
+                if (this.sum > 0) {
+                    if (this.payment === 'online') {
+                        $('#ya-form').submit();
+                        return true;
+                    }
+
+                    $('.pp-screen-form .pp-form').submit();
+                }
             }
         }
     });

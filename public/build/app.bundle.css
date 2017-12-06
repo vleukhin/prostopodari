@@ -668,13 +668,17 @@
       width: 40%; } }
 
 .pp-screen-form {
-  display: none;
   background-color: #d20833;
   text-align: center;
   padding: 50px 0 79px; }
   @media screen and (max-width: 480px) {
     .pp-screen-form {
       padding: 30px 5%; } }
+  .pp-screen-form__button {
+    display: block;
+    max-width: 370px;
+    margin: 40px auto 0;
+    width: 100%; }
 
 .pp-screen-partners {
   text-align: center;

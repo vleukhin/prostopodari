@@ -22,11 +22,25 @@
             </div>
             <span>Наличными курьеру</span>
         </div>
-        <div class="pp-form__checkbox" >
+
+        <div class="pp-form__checkbox">
             <div class="pp-checkbox pp-checkbox_white" v-on:click="payment = 'online'" v-bind:class="{'pp-checkbox_active':isSelected('online')}">
                 <div class="pp-checkbox__inner"></div>
             </div>
             <span>Яндекс Деньги</span>
         </div>
+
+        <button type="button" v-on:click="submit()" class="pp-screen-form__button pp-button pp-button_bordered">Отправить</button>
     </form>
+
+    <div class="pp-screen-form__yandex">
+        <form id='ya-form' method="POST" target="_blank" action="https://money.yandex.ru/quickpay/confirm.xml">
+            <input name="receiver" value="410015834130416" type="hidden">
+            <input name="targets" value="Оплата заказа на сайте prostopodari.ru" type="hidden">
+            <input name="successURL" value="http://prostopodari.ru" type="hidden">
+            <input name="quickpay-form" value="shop" type="hidden">
+            <input name="paymentType" value="AC" type="hidden">
+            <input name="sum" v-model="sum" maxlength="10" type="hidden">
+        </form>
+    </div>
 </div>
