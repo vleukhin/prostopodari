@@ -40,13 +40,13 @@ $app->post('/order', function (Request $request, Response $response) {
     $large = $request->getParam('large', 0);
 
     $text = "
-        Имя: $name <br/> 
-        Телефон: $phone <br/> 
-        Email: $email <br/> 
-        Адрес: $adress <br/> 
-        Small: $small <br/> 
-        Medium: $medium <br/> 
-        Large: $large <br/> 
+        Имя: $name
+        Телефон: $phone
+        Email: $email
+        Адрес: $adress
+        Small: $small
+        Medium: $medium
+        Large: $large
     ";
 
     $result = mail(getenv('EMAIL'), 'Заказ с сайта ПростоПодари', $text);
