@@ -3528,12 +3528,14 @@ body.stop-scrolling {
   position: relative; }
   .pp-carousel__item {
     outline: none; }
-  .pp-carousel__image img {
-    display: block;
-    margin: 0 auto; }
-    @media screen and (max-width: 480px) {
-      .pp-carousel__image img {
-        max-height: 180px; } }
+  .pp-carousel__image {
+    margin-bottom: 20px; }
+    .pp-carousel__image img {
+      display: block;
+      margin: 0 auto; }
+      @media screen and (max-width: 480px) {
+        .pp-carousel__image img {
+          max-height: 180px; } }
   .pp-carousel__title {
     font-size: 28px;
     text-align: center;
