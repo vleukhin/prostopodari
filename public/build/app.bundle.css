@@ -629,7 +629,6 @@
         max-width: 230px; } }
 
 .pp-screen-basket {
-  display: none;
   font-family: gilroy, sans-serif;
   text-align: center;
   font-size: 28px;
@@ -638,12 +637,13 @@
     margin-top: 46px; }
     .pp-screen-basket__present img {
       margin: 0 auto;
-      display: block; }
+      display: block;
+      max-width: 150px; }
   .pp-screen-basket__size {
     font-weight: 700;
     color: #1e7131;
     text-transform: uppercase;
-    margin-bottom: 68px; }
+    margin-bottom: 20px; }
   .pp-screen-basket__counter {
     margin: 0 auto;
     width: 100%;
@@ -658,6 +658,10 @@
     @media screen and (max-width: 480px) {
       .pp-screen-basket__button {
         max-width: 230px; } }
+  .pp-screen-basket__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
   @media screen and (max-width: 480px) {
     .pp-screen-basket .pp-caption img {
       width: 40%; } }

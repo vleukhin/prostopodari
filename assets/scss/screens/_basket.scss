@@ -1,5 +1,5 @@
 .pp-screen-basket {
-  display: none;
+  //display: none;
   font-family: gilroy, sans-serif;
   text-align: center;
   font-size: $font_size;
@@ -10,13 +10,14 @@
     img {
       margin: 0 auto;
       display: block;
+      max-width: 150px;
     }
   }
   &__size {
     font-weight: 700;
     color: $color_dark_green;
     text-transform: uppercase;
-    margin-bottom: 68px;
+    margin-bottom: 20px;
   }
   &__counter {
     margin: 0 auto;
@@ -37,6 +38,12 @@
     @include phone {
       max-width: 230px;
     }
+  }
+
+  &__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .pp-caption {
