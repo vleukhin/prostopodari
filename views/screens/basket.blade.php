@@ -14,9 +14,9 @@
                 @{{ size }}
             </div>
             <div class="pp-counter pp-screen-basket__counter">
-                <div class="pp-counter__plus" v-on:click="inc(size)"><i class="fa fa-plus"></i></div>
-                <div class="pp-counter__count">@{{ count }}</div>
                 <div class="pp-counter__minus" v-on:click="dec(size)"><i class="fa fa-minus"></i></div>
+                <div class="pp-counter__count">@{{ count }}</div>
+                <div class="pp-counter__plus" v-on:click="inc(size)"><i class="fa fa-plus"></i></div>
             </div>
         </div>
     </div>

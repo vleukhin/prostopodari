@@ -40,6 +40,8 @@
             <input name="successURL" value="http://prostopodari.ru" type="hidden">
             <input name="quickpay-form" value="shop" type="hidden">
             <input name="paymentType" value="AC" type="hidden">
+            <input name="need-email" value="on" type="hidden">
+            <input name="need-phone" value="true" type="hidden">
             <input name="sum" v-model="sum" maxlength="10" type="hidden">
         </form>
     </div>
