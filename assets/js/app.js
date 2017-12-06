@@ -12,3 +12,4 @@ window.toggleMenu  = require('./menu');
 window.callMe  = require('./callme');
 window.Size = require('./size')('#select');
 window.Basket = require('./basket')('#basket');
+window.Form = require('./form')('#form');

@@ -10376,6 +10376,7 @@ window.toggleMenu  = __webpack_require__(15);
 window.callMe  = __webpack_require__(16);
 window.Size = __webpack_require__(17)('#select');
 window.Basket = __webpack_require__(18)('#basket');
+window.Form = __webpack_require__(31)('#form');
 
 /***/ }),
 /* 3 */
@@ -40921,6 +40922,49 @@ module.exports = function (element) {
                 $('html, body').animate({
                     scrollTop: element.offset().top - headerHeight,
                 }, 500);
+            }
+        }
+    });
+};
+
+/***/ }),
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Viktor Leukhin.
+ * Tel: +7-926-797-5419
+ * E-mail: vleukhin@ya.ru
+ */
+module.exports = function (element) {
+    return new Vue({
+        el: element,
+
+        data: {
+            payment: '',
+        },
+
+        computed: {
+            sum: function () {
+                return Basket.sum
+            }
+        },
+
+        methods: {
+            isSelected: function (payment) {
+                return this.payment === payment;
             }
         }
     });

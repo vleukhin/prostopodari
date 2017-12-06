@@ -17,11 +17,15 @@
 
         <label class="pp-form__label">Способ оплаты</label>
         <div class="pp-form__checkbox">
-            <div class="pp-checkbox pp-checkbox_white"></div>
+            <div class="pp-checkbox pp-checkbox_white" v-on:click="payment = 'cash'" v-bind:class="{'pp-checkbox_active':isSelected('cash')}">
+                <div class="pp-checkbox__inner"></div>
+            </div>
             <span>Наличными курьеру</span>
         </div>
-        <div class="pp-form__checkbox">
-            <div class="pp-checkbox pp-checkbox_white"></div>
+        <div class="pp-form__checkbox" >
+            <div class="pp-checkbox pp-checkbox_white" v-on:click="payment = 'online'" v-bind:class="{'pp-checkbox_active':isSelected('online')}">
+                <div class="pp-checkbox__inner"></div>
+            </div>
             <span>Яндекс Деньги</span>
         </div>
     </form>
