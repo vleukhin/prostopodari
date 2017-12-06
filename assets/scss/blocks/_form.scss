@@ -22,6 +22,7 @@
     color: #fff;
     text-align: center;
     outline: none;
+    border-radius: 0;
 
     @include phone {
       font-size: 22px;
