@@ -54,6 +54,17 @@
                 swal('Ваша заявка принята, в ближайшее время мы свяжемся с вами');
                 location.hash = '';
             }
+
+            $('[data-js=oneclick]').on('click', function (event) {
+                event.preventDefault();
+                var form = $('#form');
+
+                form.show();
+
+                $('html, body').animate({
+                    scrollTop: form.offset().top - headerHeight,
+                }, 500);
+            });
         });
 
         var headerHeight = $('.pp-header').height();

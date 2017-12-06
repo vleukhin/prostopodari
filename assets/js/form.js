@@ -13,7 +13,7 @@ module.exports = function (element) {
 
         computed: {
             sum: function () {
-                return Basket.sum;
+                return Basket.sum ? Basket.sum : 3500;
             }
         },
 
