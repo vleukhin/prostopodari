@@ -11,10 +11,8 @@
     <meta property="og:description" content="Интернет магазин готового подарка">
     <meta name="description" content="Интернет магазин готового подарка">
     <meta name="format-detection" content="telephone=no">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#ffffff">
     <script>
         if (window.DEVICE_TYPE = "", self.screen) scrwidth = screen.width, scrheight = screen.height; else if (self.java) {
