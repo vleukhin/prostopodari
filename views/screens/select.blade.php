@@ -26,7 +26,7 @@
     </div>
     <div class="pp-screen-select__info" v-show="diameter != 0">
         <div class="pp-screen-select__present">
-            <img src="/images/sizes_present.png" alt="Просто подари">
+            <img :src="image" alt="Просто подари">
         </div>
         <div class="pp-screen-select__text">
             Оригинальная упаковка <br>

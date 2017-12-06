@@ -22,6 +22,10 @@ module.exports = function (element) {
                 };
 
                 return prices[this.size];
+            },
+
+            image: function () {
+                return '/images/present_' + this.size + '.png';
             }
         },
 
