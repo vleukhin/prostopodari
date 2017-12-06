@@ -3849,7 +3849,8 @@ body.stop-scrolling {
     margin: 40px 0; }
     @media screen and (max-width: 480px) {
       .pp-screen-select__present {
-        margin: 30px auto 0; } }
+        margin: 30px auto 0;
+        max-width: 60%; } }
   .pp-screen-select__text {
     color: #1e7131;
     margin-bottom: 40px; }
