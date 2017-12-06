@@ -45,8 +45,7 @@ module.exports = function (element) {
                 Basket.inc(this.size);
                 setTimeout(function () {
                     this.scrollTo($('#basket'));
-
-                }, 100)
+                }.bind(this),  50)
             },
 
             selectSize: function (size, diameter, height) {

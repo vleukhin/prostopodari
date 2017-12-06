@@ -634,7 +634,8 @@
   font-size: 28px;
   padding-bottom: 65px; }
   .pp-screen-basket__present {
-    margin-top: 46px; }
+    margin-top: 46px;
+    min-height: 190px; }
     .pp-screen-basket__present img {
       margin: 0 auto;
       display: block;

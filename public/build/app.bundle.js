@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,51 +92,6 @@ module.exports = g;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scss_app_scss__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scss_app_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scss_app_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_font_awesome_scss_font_awesome_scss__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_font_awesome_scss_font_awesome_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_font_awesome_scss_font_awesome_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_sweetalert_dist_sweetalert_css__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_sweetalert_dist_sweetalert_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_sweetalert_dist_sweetalert_css__);
-
-
-
-
-window.$ = window.jQuery = __webpack_require__(5);
-window._ = __webpack_require__(6);
-window.Vue = __webpack_require__(8);
-__webpack_require__(12);
-__webpack_require__(33);
-
-window.toggleMenu  = __webpack_require__(16);
-window.callMe  = __webpack_require__(17);
-window.Size = __webpack_require__(18)('#select');
-window.Basket = __webpack_require__(19)('#basket');
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10352,9 +10307,9 @@ jQuery.nodeName = nodeName;
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( true ) {
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
 		return jQuery;
-	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
@@ -10394,6 +10349,51 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scss_app_scss__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scss_app_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scss_app_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_font_awesome_scss_font_awesome_scss__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_font_awesome_scss_font_awesome_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_font_awesome_scss_font_awesome_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_sweetalert_dist_sweetalert_css__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_sweetalert_dist_sweetalert_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_sweetalert_dist_sweetalert_css__);
+
+
+
+
+window.$ = window.jQuery = __webpack_require__(1);
+window._ = __webpack_require__(6);
+window.Vue = __webpack_require__(8);
+__webpack_require__(12);
+__webpack_require__(14);
+
+window.toggleMenu  = __webpack_require__(15);
+window.callMe  = __webpack_require__(16);
+window.Size = __webpack_require__(17)('#select');
+window.Basket = __webpack_require__(18)('#basket');
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 6 */
@@ -27467,9 +27467,9 @@ return jQuery;
 
     // Define as an anonymous module so, through path mapping, it can be
     // referenced as the "underscore" module.
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
       return _;
-    }).call(exports, __webpack_require__, exports, module),
+    }.call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
   // Check for `exports` after `define` in case a build optimizer adds it.
@@ -40259,225 +40259,13 @@ if (typeof window !== 'undefined' && window.Vue) {
 /* (ignored) */
 
 /***/ }),
-/* 14 */,
-/* 15 */,
-/* 16 */
-/***/ (function(module, exports) {
-
-/**
- * Created by Viktor Leukhin.
- * Tel: +7-926-797-5419
- * E-mail: vleukhin@ya.ru
- */
-module.exports = function (element, toggleClass, menu) {
-    var phone = $('[data-js=phone-icon]');
-
-    if (phone.hasClass('active')){
-        phone.removeClass('active');
-        $('[data-js=callme-form]').hide();
-    }
-
-    var $element = $(element);
-    var $menu = $(menu);
-
-    if ($element.hasClass(toggleClass)) {
-        $menu.slideUp();
-    }
-    else {
-        $menu.slideDown();
-    }
-
-    $element.toggleClass(toggleClass);
-    $menu.toggleClass('active')
-};
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-/**
- * Created by Viktor Leukhin.
- * Tel: +7-926-797-5419
- * E-mail: vleukhin@ya.ru
- */
-module.exports = function () {
-    var menu = $('[data-js=menu]');
-    if (menu.hasClass('active')) {
-        menu.removeClass('active');
-        menu.hide();
-        $('[data-js=burger]').removeClass('pp-burger_open');
-    }
-
-    var phone = $('[data-js=phone-icon]');
-    var form = $('[data-js=callme-form]');
-    phone.toggleClass('active');
-
-    if (!phone.hasClass('active')) {
-        form.slideUp();
-    }
-    else {
-        form.slideDown();
-    }
-};
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-/**
- * Created by Viktor Leukhin.
- * Tel: +7-926-797-5419
- * E-mail: vleukhin@ya.ru
- */
-module.exports = function (element) {
-    return new Vue({
-        el: element,
-
-        data: {
-            size: '',
-            diameter: 0,
-            height: 0,
-        },
-
-        computed: {
-            price: function () {
-                var prices = {
-                    small: 1500,
-                    medium: 2500,
-                    large: 3500,
-                };
-
-                return prices[this.size];
-            },
-
-            image: function () {
-                return '/images/present_' + this.size + '.png';
-            }
-        },
-
-        methods: {
-            isSelected: function (size) {
-                return this.size === size;
-            },
-
-            reset: function () {
-                this.size = '';
-                this.diameter = 0;
-                this.height = 0;
-                this.scrollTo($('#select'));
-            },
-
-            inc: function () {
-                Basket.inc(this.size);
-                setTimeout(function () {
-                    this.scrollTo($('#basket'));
-
-                }, 100)
-            },
-
-            selectSize: function (size, diameter, height) {
-                this.size = size;
-                this.diameter = diameter;
-                this.height = height;
-
-                $('#form').hide();
-                $('#basket').hide();
-
-                setTimeout(function () {
-                    var slider = $('#carousel-' + this.size);
-
-                    if (!slider.hasClass('slick-initialized')) {
-                        slider.slick({
-                            // centerMode: true,
-                            centerPadding: '100px',
-                            slidesToShow: DEVICE_TYPE === 'desktop' ? 3 : 1,
-                            prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
-                            nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
-                        });
-                    }
-
-                }.bind(this), 200)
-
-            },
-
-            scrollTo: function (element) {
-                var headerHeight = $('.pp-header').height();
-
-                $('html, body').animate({
-                    scrollTop: element.offset().top - headerHeight,
-                }, 500);
-            }
-        }
-    });
-};
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-/**
- * Created by Viktor Leukhin.
- * Tel: +7-926-797-5419
- * E-mail: vleukhin@ya.ru
- */
-module.exports = function (element) {
-    return new Vue({
-        el: element,
-
-        data: {
-            counts: {
-                small: 0,
-                medium: 0,
-                large: 0,
-            },
-        },
-        
-        computed: {
-            sum: function () {
-                return this.counts.small * 1500
-                    + this.counts.medium * 2500
-                    + this.counts.large * 3500;
-            }  
-        },
-
-        methods: {
-            inc: function (size) {
-                this.counts[size]++;
-            },
-            dec: function (size) {
-                this.counts[size]--;
-                if (this.counts[size] < 0){
-                    this.counts[size] = 0
-                }
-            },
-            getImage: function () {
-                return '/images/present_' + this.size + '.png';
-            }
-        }
-    });
-};
-
-/***/ }),
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
     if (true) {
         // AMD. Register as an anonymous module.
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(5)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -40914,6 +40702,217 @@ $.fn.extend({
 });
 }));
 
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Viktor Leukhin.
+ * Tel: +7-926-797-5419
+ * E-mail: vleukhin@ya.ru
+ */
+module.exports = function (element, toggleClass, menu) {
+    var phone = $('[data-js=phone-icon]');
+
+    if (phone.hasClass('active')){
+        phone.removeClass('active');
+        $('[data-js=callme-form]').hide();
+    }
+
+    var $element = $(element);
+    var $menu = $(menu);
+
+    if ($element.hasClass(toggleClass)) {
+        $menu.slideUp();
+    }
+    else {
+        $menu.slideDown();
+    }
+
+    $element.toggleClass(toggleClass);
+    $menu.toggleClass('active')
+};
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Viktor Leukhin.
+ * Tel: +7-926-797-5419
+ * E-mail: vleukhin@ya.ru
+ */
+module.exports = function () {
+    var menu = $('[data-js=menu]');
+    if (menu.hasClass('active')) {
+        menu.removeClass('active');
+        menu.hide();
+        $('[data-js=burger]').removeClass('pp-burger_open');
+    }
+
+    var phone = $('[data-js=phone-icon]');
+    var form = $('[data-js=callme-form]');
+    phone.toggleClass('active');
+
+    if (!phone.hasClass('active')) {
+        form.slideUp();
+    }
+    else {
+        form.slideDown();
+    }
+};
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Viktor Leukhin.
+ * Tel: +7-926-797-5419
+ * E-mail: vleukhin@ya.ru
+ */
+module.exports = function (element) {
+    return new Vue({
+        el: element,
+
+        data: {
+            size: '',
+            diameter: 0,
+            height: 0,
+        },
+
+        computed: {
+            price: function () {
+                var prices = {
+                    small: 1500,
+                    medium: 2500,
+                    large: 3500,
+                };
+
+                return prices[this.size];
+            },
+
+            image: function () {
+                return '/images/present_' + this.size + '.png';
+            }
+        },
+
+        methods: {
+            isSelected: function (size) {
+                return this.size === size;
+            },
+
+            reset: function () {
+                this.size = '';
+                this.diameter = 0;
+                this.height = 0;
+                this.scrollTo($('#select'));
+            },
+
+            inc: function () {
+                Basket.inc(this.size);
+                setTimeout(function () {
+                    this.scrollTo($('#basket'));
+                }.bind(this),  50)
+            },
+
+            selectSize: function (size, diameter, height) {
+                this.size = size;
+                this.diameter = diameter;
+                this.height = height;
+
+                $('#form').hide();
+                $('#basket').hide();
+
+                setTimeout(function () {
+                    var slider = $('#carousel-' + this.size);
+
+                    if (!slider.hasClass('slick-initialized')) {
+                        slider.slick({
+                            // centerMode: true,
+                            centerPadding: '100px',
+                            slidesToShow: DEVICE_TYPE === 'desktop' ? 3 : 1,
+                            prevArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_prev"><</div>',
+                            nextArrow: '<div class="pp-carousel__arrow pp-carousel__arrow_next">></div>',
+                        });
+                    }
+
+                }.bind(this), 200)
+
+            },
+
+            scrollTo: function (element) {
+                var headerHeight = $('.pp-header').height();
+
+                $('html, body').animate({
+                    scrollTop: element.offset().top - headerHeight,
+                }, 500);
+            }
+        }
+    });
+};
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by Viktor Leukhin.
+ * Tel: +7-926-797-5419
+ * E-mail: vleukhin@ya.ru
+ */
+module.exports = function (element) {
+    return new Vue({
+        el: element,
+
+        data: {
+            counts: {
+                small: 0,
+                medium: 0,
+                large: 0,
+            },
+        },
+
+        computed: {
+            sum: function () {
+                return this.counts.small * 1500
+                    + this.counts.medium * 2500
+                    + this.counts.large * 3500;
+            }
+        },
+
+        methods: {
+            inc: function (size) {
+                this.counts[size]++;
+            },
+            dec: function (size) {
+                this.counts[size]--;
+                if (this.counts[size] < 0) {
+                    this.counts[size] = 0
+                }
+            },
+            getImage: function (size) {
+                return '/images/present_' + size + '.png';
+            },
+            showForm() {
+                $('#form').slideDown();
+
+                setTimeout(function () {
+                    this.scrollTo($('#form'));
+                }.bind(this),  50)
+            },
+
+            scrollTo: function (element) {
+                var headerHeight = $('.pp-header').height();
+
+                $('html, body').animate({
+                    scrollTop: element.offset().top - headerHeight,
+                }, 500);
+            }
+        }
+    });
+};
 
 /***/ })
 /******/ ]);
