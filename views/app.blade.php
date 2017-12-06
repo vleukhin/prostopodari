@@ -37,7 +37,7 @@
 <script>
     (function ($) {
         $(document).ready(function () {
-            $('#phone').mask("+7 999 999 9999", {placeholder: "+7 ___ ___ ____"});
+            $('[name=phone]').mask("+7 999 999 9999", {placeholder: "+7 ___ ___ ____"});
         });
 
         var headerHeight = $('.pp-header').height();
@@ -48,17 +48,6 @@
 
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top - headerHeight,
-            }, 500);
-        });
-
-        $('[data-js=oneclick]').on('click', function (event) {
-            event.preventDefault();
-            var form = $('#form');
-
-            form.show();
-
-            $('html, body').animate({
-                scrollTop: form.offset().top - headerHeight,
             }, 500);
         });
     })(window.jQuery);
