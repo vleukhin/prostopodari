@@ -69,7 +69,7 @@ module.exports = function (element) {
                         });
                     }
 
-                }.bind(this), 200)
+                }.bind(this), 400)
 
             },
 
