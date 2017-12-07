@@ -9,6 +9,7 @@
 
   .pp-caption {
     margin-bottom: 40px;
+    z-index: 2;
 
     @include phone {
       margin-bottom: 20px;
