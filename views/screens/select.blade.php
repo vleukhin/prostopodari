@@ -84,7 +84,7 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/5.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Снежный шар <br/> <img src="/images/icon_diameter_green.png" alt=""> 15см <img src="/images/icon_height_green.png" alt=""> 17см</div>
+                <div class="pp-carousel__title">Снежный шар <br/> <img src="/images/icon_diameter_green.png" alt=""> 7см <img src="/images/icon_height_green.png" alt=""> 9см</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
@@ -122,7 +122,7 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/6.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Снежный шар <br/> <img src="/images/icon_diameter_green.png" alt=""> 15см <img src="/images/icon_height_green.png" alt=""> 17см</div>
+                <div class="pp-carousel__title">Снежный шар <br/> <img src="/images/icon_diameter_green.png" alt=""> 9см <img src="/images/icon_height_green.png" alt=""> 12см</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
