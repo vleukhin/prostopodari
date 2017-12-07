@@ -28,6 +28,6 @@
     </div>
     <button class="pp-button pp-screen-basket__button" v-on:click="showForm()">оформить заказ</button>
     <div class="pp-screen-basket__shipping">
-        *при заказе от 3000 руб. Доставка осуществляется бесплатно
+        *при заказе от 3000 руб. доставка осуществляется бесплатно
     </div>
 </div>

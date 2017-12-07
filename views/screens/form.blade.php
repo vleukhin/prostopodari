@@ -27,7 +27,7 @@
             <div class="pp-checkbox pp-checkbox_white" v-on:click="payment = 'online'" v-bind:class="{'pp-checkbox_active':isSelected('online')}">
                 <div class="pp-checkbox__inner"></div>
             </div>
-            <span>Яндекс Деньги</span>
+            <span>Банковской картой (Яндекс Деньги)</span>
         </div>
 
         <button type="button" v-on:click="submit()" class="pp-screen-form__button pp-button pp-button_bordered">Отправить</button>
