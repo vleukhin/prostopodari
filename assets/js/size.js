@@ -54,7 +54,6 @@ module.exports = function (element) {
                 this.height = height;
 
                 $('#form').hide();
-                $('#basket').hide();
 
                 setTimeout(function () {
                     var slider = $('#carousel-' + this.size);
