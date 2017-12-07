@@ -7,7 +7,7 @@
         <input type="text" id="name" name="name" class="pp-form__input"/>
 
         <label for="phone" class="pp-form__label">Телефон</label>
-        <input type="text" id="phone" name="phone" class="pp-form__input" placeholder="+7 ___ ___ ____"/>
+        <input type="tel" id="phone" name="phone" class="pp-form__input" placeholder="+7 ___ ___ ____"/>
 
         <label for="email" class="pp-form__label">Email</label>
         <input type="text" id="email" name="email" class="pp-form__input"/>
