@@ -2,6 +2,8 @@
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
 <div class="pp-screen-intro" id="intro">
+    <div class="pp-screen-intro__left-bg"></div>
+    <div class="pp-screen-intro__right-bg"></div>
     <div class="pp-screen-intro__logo">
         <img src="/images/logo.png" alt="Просто подари">
     </div>

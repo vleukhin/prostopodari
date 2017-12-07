@@ -2,21 +2,45 @@
   background-image: url('/images/intro-bg.png');
   background-position: 50% -25px;
   background-repeat: no-repeat;
-  padding-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 25px;
 
+  > * {
+    z-index: 2;
+  }
+
   @include phone {
-    background-image: url('/images/intro-bg-phone.png');
-    padding-top: 30px;
-    background-position-y: 20px;
-    background-size: contain;
+    background-image: none;
+
+    &__left-bg {
+      background: url('/images/intro-bg-phone-left.png');
+      width: 25%;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      z-index: 1;
+      background-size: contain;
+    }
+    &__right-bg {
+      background: url('/images/intro-bg-phone-right.png');
+      width: 16%;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      z-index: 1;
+      background-size: contain;
+    }
   }
 
   &__logo {
+    margin-top: 90px;
     margin-bottom: 25px;
+
+    @include phone{
+      margin-top: 30px;
+    }
 
     img {
       display: block;

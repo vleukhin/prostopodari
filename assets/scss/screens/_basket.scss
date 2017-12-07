@@ -1,5 +1,4 @@
 .pp-screen-basket {
-  //display: none;
   font-family: gilroy, sans-serif;
   text-align: center;
   font-size: $font_size;
@@ -43,7 +42,7 @@
   }
 
   &__shipping {
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 10px;
     color: lighten($color_red, 10%);
   }

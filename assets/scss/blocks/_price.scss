@@ -1,0 +1,33 @@
+.pp-price {
+  font-size: 25px;
+  display: inline-block;
+  background-color: $color_dark_green;
+  padding: 5px;
+  position: relative;
+
+  &:after {
+    $size: 32px;
+    content: "";
+    position: absolute;
+    left: -$size;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: $size solid $color_dark_green;
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+  }
+
+  &__value {
+    font-size: 20px;
+    &:after {
+      position: absolute;
+      top: 16px;
+      content: "";
+      height: 1px;
+      width: 80%;
+      left: 15px;
+      background-color: #fff;
+    }
+  }
+}

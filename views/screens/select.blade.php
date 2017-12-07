@@ -58,7 +58,7 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/8.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3  шт.</div>
+                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3 шт.</div>
             </div>
         </div>
         <div class="pp-carousel" v-show="isSelected('medium')" id="carousel-medium">
@@ -90,7 +90,7 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/8.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3  шт.</div>
+                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28г.*3 шт.</div>
             </div>
         </div>
         <div class="pp-carousel" v-show="isSelected('large')" id="carousel-large">
@@ -110,7 +110,7 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/3.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Рождественский кулич GranDucale Panettone </div>
+                <div class="pp-carousel__title">Рождественский кулич GranDucale Panettone</div>
             </div>
             <div class="pp-carousel__item">
                 <div class="pp-carousel__image">
@@ -134,13 +134,16 @@
                 <div class="pp-carousel__image">
                     <img src="/images/content/8.png" alt="">
                 </div>
-                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28гр. × 3  шт.</div>
+                <div class="pp-carousel__title">Карамель леденцовая «Трость» со вкусом клубники 28гр. × 3 шт.</div>
             </div>
         </div>
     </div>
     <div class="pp-screen-select__basket" v-show="diameter != 0">
         <div class="pp-screen-select__price">Цена</div>
-        <div class="pp-screen-select__price-value">@{{ price }} руб.</div>
+        <div class="pp-price">
+            <div class="pp-price__value">@{{ price + 1000}}</div>
+            <div class="pp-price__discount">@{{ price }} руб.</div>
+        </div>
         <button class="pp-button pp-button_green" v-on:click="inc(size)">Добавить в корзину</button>
         <button class="pp-button pp-button_green pp-button_bordered" v-on:click="reset()">Выбрать другой</button>
     </div>

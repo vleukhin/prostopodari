@@ -1,7 +1,7 @@
 {{--Created by Viktor Leukhin--}}
 {{--Tel: +7-926-797-5419--}}
 {{--E-mail: vleukhin@ya.ru--}}
-<div class="pp-screen-basket" id="basket" v-show="sum > 0">
+<div class="pp-screen-basket" id="basket">
     <div class="pp-caption">
         <img src="/images/caption_3.png" alt="Просто выбрать" class="pp-caption__text">
     </div>
