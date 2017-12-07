@@ -3920,7 +3920,8 @@ body.stop-scrolling {
     margin-bottom: 30px; }
   .pp-screen-select .pp-price {
     margin-left: 50px;
-    top: 12px; }
+    top: 12px;
+    height: 54px; }
   .pp-screen-select .pp-button {
     display: block;
     margin: 0 auto;
