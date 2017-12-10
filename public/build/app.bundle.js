@@ -42091,10 +42091,15 @@ module.exports = function (element) {
     return new Vue({
         el: element,
 
+        created: function () {
+            this.initCarousel();
+            this.initCarousel();
+        },
+
         data: {
-            size: '',
-            diameter: 0,
-            height: 0,
+            size: 'small',
+            diameter: 16,
+            height: 16,
         },
 
         computed: {
@@ -42119,9 +42124,6 @@ module.exports = function (element) {
             },
 
             reset: function () {
-                this.size = '';
-                this.diameter = 0;
-                this.height = 0;
                 this.scrollTo($('#select'));
             },
 
@@ -42139,6 +42141,10 @@ module.exports = function (element) {
 
                 $('#form').hide();
 
+                this.initCarousel();
+            },
+
+            initCarousel: function () {
                 setTimeout(function () {
                     var slider = $('#carousel-' + this.size);
 
@@ -42153,7 +42159,6 @@ module.exports = function (element) {
                     }
 
                 }.bind(this), 400)
-
             },
 
             scrollTo: function (element) {
