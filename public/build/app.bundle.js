@@ -42195,9 +42195,15 @@ module.exports = function (element) {
 
         computed: {
             sum: function () {
-                return this.counts.small * 1500
+                var sum =  this.counts.small * 1500
                     + this.counts.medium * 2500
                     + this.counts.large * 3500;
+
+                if (sum > 0 && sum < 3000){
+                    sum += 300;
+                }
+
+                return sum;
             }
         },
 
