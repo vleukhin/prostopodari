@@ -28,9 +28,6 @@
             <li class="pp-menu__item">
                 <a href="#basket" class="pp-menu__link">Корзина</a>
             </li>
-            <li class="pp-menu__item">
-                <a href="#partners" class="pp-menu__link">Партнеры</a>
-            </li>
         </ul>
     </div>
 
