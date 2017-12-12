@@ -45,6 +45,11 @@
     font-size: 20px;
     margin-top: 10px;
     color: lighten($color_red, 10%);
+
+    @include phone{
+      font-size: 15px;
+      padding: 0 3px;
+    }
   }
 
   &__items {

@@ -48,11 +48,27 @@
                 }
 
                 return true;
-            })
+            });
 
-            if (location.hash === '#success'){
+            if (location.hash === '#success') {
                 swal('Ваша заявка принята, в ближайшее время мы свяжемся с вами');
                 location.hash = '';
+            }
+
+            if (location.hash === '#success-ya') {
+                try {
+                    var lead = JSON.parse(window.localStorage.getItem('lead'));
+                }
+                catch (err) {
+                }
+
+                if (lead) {
+                    $.post('/order', lead).then(function () {
+                        swal('Ваша заявка принята, в ближайшее время мы свяжемся с вами');
+                        location.hash = '';
+                    });
+                }
+
             }
 
             $('[data-js=oneclick]').on('click', function (event) {

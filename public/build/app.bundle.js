@@ -10756,9 +10756,9 @@ jQuery.nodeName = nodeName;
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( true ) {
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
 		return jQuery;
-	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
@@ -27956,9 +27956,9 @@ window.Form = __webpack_require__(28)('#form');
 
     // Define as an anonymous module so, through path mapping, it can be
     // referenced as the "underscore" module.
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
       return _;
-    }).call(exports, __webpack_require__, exports, module),
+    }.call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
   // Check for `exports` after `define` in case a build optimizer adds it.
@@ -42254,6 +42254,9 @@ module.exports = function (element) {
 
         data: {
             payment: 'cash',
+            email: '',
+            name: '',
+            adress: ''
         },
 
         computed: {
@@ -42263,6 +42266,19 @@ module.exports = function (element) {
         },
 
         methods: {
+            save: function (phone) {
+                window.localStorage.setItem('lead', JSON.stringify({
+                    payment: this.payment,
+                    email: this.email,
+                    phone: phone,
+                    name: this.name,
+                    adress: this.adress,
+                    small: window.Basket.counts.small,
+                    medium: window.Basket.counts.medium,
+                    large: window.Basket.counts.large,
+                }));
+            },
+
             isSelected: function (payment) {
                 return this.payment === payment;
             },
@@ -42270,8 +42286,9 @@ module.exports = function (element) {
             submit: function () {
                 if (this.sum > 0) {
                     var form = $('.pp-screen-form .pp-form');
+                    var phone = form.find('[name=phone]').val();
 
-                    if (form.find('[name=phone]').val().length < 15) {
+                    if (phone.length < 15) {
                         swal('Телефонный номер указан не верно');
                         form.find('[name=phone]').focus();
                         return false;
@@ -42284,6 +42301,7 @@ module.exports = function (element) {
                     }
 
                     if (this.payment === 'online') {
+                        this.save(phone);
                         $('#ya-form').submit();
                         return true;
                     }

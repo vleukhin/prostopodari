@@ -3968,6 +3968,10 @@ body.stop-scrolling {
     font-size: 20px;
     margin-top: 10px;
     color: #f61746; }
+    @media screen and (max-width: 480px) {
+      .pp-screen-basket__shipping {
+        font-size: 15px;
+        padding: 0 3px; } }
   .pp-screen-basket__items {
     display: flex;
     flex-direction: row;

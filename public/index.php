@@ -38,6 +38,8 @@ $app->post('/order', function (Request $request, Response $response) {
     $small = $request->getParam('small', 0);
     $medium = $request->getParam('medium', 0);
     $large = $request->getParam('large', 0);
+    $payment = $request->getParam('payment', 'cash');
+    $payment = $payment == 'online' ? 'Картой' : 'Наличными';
 
     $text = "
         Имя: $name
@@ -47,9 +49,10 @@ $app->post('/order', function (Request $request, Response $response) {
         Small: $small
         Medium: $medium
         Large: $large
+        Способ оплаты: $payment
     ";
 
-    $result = mail(getenv('EMAIL'), 'Заказ с сайта ПростоПодари', $text);
+    mail(getenv('EMAIL'), 'Заказ с сайта ПростоПодари', $text);
 
     return $response->withRedirect('/#success');
 });

@@ -4,16 +4,18 @@
 <div class="pp-screen-form" id="form">
     <form class="pp-form" method="POST" action="/order">
         <label for="name" class="pp-form__label">Имя</label>
-        <input type="text" id="name" name="name" class="pp-form__input"/>
+        <input type="text" id="name" name="name" v-model="name" class="pp-form__input"/>
 
         <label for="phone" class="pp-form__label">Телефон</label>
         <input type="tel" id="phone" name="phone" class="pp-form__input" placeholder="+7 ___ ___ ____"/>
 
         <label for="email" class="pp-form__label">Email</label>
-        <input type="text" id="email" name="email" class="pp-form__input"/>
+        <input type="text" id="email" name="email" v-model="email" class="pp-form__input"/>
 
         <label for="adress" class="pp-form__label">Адрес доставки</label>
-        <textarea id="adress" name="adress" class="pp-form__input"></textarea>
+        <textarea id="adress" name="adress" v-model="adress" class="pp-form__input"></textarea>
+
+        <input name="payment" v-model="payment" type="hidden">
 
         <label class="pp-form__label">Способ оплаты</label>
         <div class="pp-form__checkbox">
@@ -37,7 +39,7 @@
         <form id='ya-form' method="POST" target="_blank" action="https://money.yandex.ru/quickpay/confirm.xml">
             <input name="receiver" value="410015834130416" type="hidden">
             <input name="targets" value="Оплата заказа на сайте prostopodari.ru" type="hidden">
-            <input name="successURL" value="http://prostopodari.ru#success" type="hidden">
+            <input name="successURL" value="http://prostopodari.ru?#success-ya" type="hidden">
             <input name="quickpay-form" value="shop" type="hidden">
             <input name="paymentType" value="AC" type="hidden">
             <input name="need-email" value="on" type="hidden">

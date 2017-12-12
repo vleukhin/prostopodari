@@ -9,6 +9,9 @@ module.exports = function (element) {
 
         data: {
             payment: 'cash',
+            email: '',
+            name: '',
+            adress: ''
         },
 
         computed: {
@@ -18,6 +21,19 @@ module.exports = function (element) {
         },
 
         methods: {
+            save: function (phone) {
+                window.localStorage.setItem('lead', JSON.stringify({
+                    payment: this.payment,
+                    email: this.email,
+                    phone: phone,
+                    name: this.name,
+                    adress: this.adress,
+                    small: window.Basket.counts.small,
+                    medium: window.Basket.counts.medium,
+                    large: window.Basket.counts.large,
+                }));
+            },
+
             isSelected: function (payment) {
                 return this.payment === payment;
             },
@@ -25,8 +41,9 @@ module.exports = function (element) {
             submit: function () {
                 if (this.sum > 0) {
                     var form = $('.pp-screen-form .pp-form');
+                    var phone = form.find('[name=phone]').val();
 
-                    if (form.find('[name=phone]').val().length < 15) {
+                    if (phone.length < 15) {
                         swal('Телефонный номер указан не верно');
                         form.find('[name=phone]').focus();
                         return false;
@@ -39,6 +56,7 @@ module.exports = function (element) {
                     }
 
                     if (this.payment === 'online') {
+                        this.save(phone);
                         $('#ya-form').submit();
                         return true;
                     }
