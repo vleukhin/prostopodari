@@ -12,6 +12,7 @@
   cursor: pointer;
   font-style: normal;
   outline: none;
+  border-radius: 0;
 
   @include phone {
     font-size: $font_phone_size;
