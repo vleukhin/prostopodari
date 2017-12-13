@@ -13,9 +13,9 @@ module.exports = function (element) {
         },
 
         data: {
-            size: 'large',
-            diameter: 25,
-            height: 22,
+            size: 'small',
+            diameter: 16,
+            height: 16,
         },
 
         computed: {
