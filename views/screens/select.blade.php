@@ -139,9 +139,14 @@
         </div>
     </div>
     <div class="pp-screen-select__basket" v-show="diameter != 0">
+
+        <div class="pp-screen-select__text">До окончания акции осталось:</div>
+
+        <script src="http://megatimer.ru/s/f59ab684d2f98d13cbfa81e59341a24e.js"></script>
+
         <div class="pp-screen-select__price">Цена</div>
         <div class="pp-price">
-            <div class="pp-price__value">@{{ price + 1000}}</div>
+            <div class="pp-price__value">@{{ getOldPrice() }}</div>
             <div class="pp-price__discount">@{{ price }} руб.</div>
         </div>
         <button class="pp-button pp-button_green" v-on:click="inc(size)">Добавить в корзину</button>

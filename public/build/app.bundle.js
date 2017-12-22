@@ -10756,9 +10756,9 @@ jQuery.nodeName = nodeName;
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( true ) {
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
 		return jQuery;
-	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
@@ -27956,9 +27956,9 @@ window.Form = __webpack_require__(28)('#form');
 
     // Define as an anonymous module so, through path mapping, it can be
     // referenced as the "underscore" module.
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
       return _;
-    }.call(exports, __webpack_require__, exports, module),
+    }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
   // Check for `exports` after `define` in case a build optimizer adds it.
@@ -42105,9 +42105,9 @@ module.exports = function (element) {
         computed: {
             price: function () {
                 var prices = {
-                    small: 1500,
-                    medium: 2500,
-                    large: 3500,
+                    small: 1300,
+                    medium: 1900,
+                    large: 2900,
                 };
 
                 return prices[this.size];
@@ -42131,7 +42131,7 @@ module.exports = function (element) {
                 Basket.inc(this.size);
                 setTimeout(function () {
                     this.scrollTo($('#basket'));
-                }.bind(this),  50)
+                }.bind(this), 50)
             },
 
             selectSize: function (size, diameter, height) {
@@ -42167,6 +42167,19 @@ module.exports = function (element) {
                 $('html, body').animate({
                     scrollTop: element.offset().top - headerHeight,
                 }, 500);
+            },
+
+            getOldPrice: function () {
+                var price = this.price;
+
+                if (this.size == 'small') {
+                    price += 700;
+                }
+                else {
+                    price += 600;
+                }
+
+                return price;
             }
         }
     });
