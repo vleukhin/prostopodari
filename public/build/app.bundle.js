@@ -42208,11 +42208,11 @@ module.exports = function (element) {
 
         computed: {
             sum: function () {
-                var sum =  this.counts.small * 1500
-                    + this.counts.medium * 2500
-                    + this.counts.large * 3500;
+                var sum = this.counts.small * 1300
+                    + this.counts.medium * 1900
+                    + this.counts.large * 2900;
 
-                if (sum > 0 && sum < 3000){
+                if (sum > 0 && sum < 3000) {
                     sum += 300;
                 }
 
@@ -42238,7 +42238,7 @@ module.exports = function (element) {
 
                 setTimeout(function () {
                     this.scrollTo($('#form'));
-                }.bind(this),  50)
+                }.bind(this), 50)
             },
 
             scrollTo: function (element) {
