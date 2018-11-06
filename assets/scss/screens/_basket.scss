@@ -1,0 +1,72 @@
+.pp-screen-basket {
+  font-family: gilroy, sans-serif;
+  text-align: center;
+  font-size: $font_size;
+  padding-bottom: 65px;
+
+  &__present {
+    margin-top: 46px;
+    min-height: 190px;
+
+    img {
+      margin: 0 auto;
+      display: block;
+      max-width: 150px;
+    }
+  }
+  &__size {
+    font-weight: 700;
+    color: $color_dark_green;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__counter {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  &__sum {
+    color: $color_dark_green;
+    font-weight: 700;
+    margin: 57px 0 29px;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 370px;
+
+    @include phone {
+      max-width: 230px;
+    }
+  }
+
+  &__shipping {
+    font-size: 20px;
+    margin-top: 10px;
+    color: lighten($color_red, 10%);
+
+    @include phone{
+      font-size: 15px;
+      padding: 0 3px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  .pp-caption {
+    img {
+      @include phone {
+        width: 40%;
+      }
+    }
+  }
+}

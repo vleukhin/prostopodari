@@ -1,0 +1,91 @@
+@import "inc/vars";
+@import "inc/adaptive-mixins";
+@import "inc/mixins";
+@import "inc/fonts";
+/**
+ * Partials
+ */
+@import "partials/button";
+@import "partials/caption";
+@import "partials/text";
+@import "partials/checkbox";
+/**
+ * Blocks
+ */
+@import "blocks/menu";
+@import "blocks/burger";
+@import "blocks/reason";
+@import "blocks/size";
+@import "blocks/carousel";
+@import "blocks/counter";
+@import "blocks/form";
+@import "blocks/callme";
+@import "blocks/price";
+/**
+ * Layout
+ */
+@import "layout/header";
+/**
+ * Screens
+ */
+@import "screens/intro";
+@import "screens/reasons";
+@import "screens/select";
+@import "screens/basket";
+@import "screens/form";
+@import "screens/partners";
+
+html, body {
+  background: $color_blue;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page, .content {
+  height: 100%;
+}
+
+.page {
+  padding-top: 77px;
+}
+
+a:active {
+  color: inherit;
+}
+
+[v-cloak] {
+  display: none
+}
+
+img {
+  max-width: 100%;
+}
+
+.sweet-alert {
+  background-color: $color_dark_green;
+  border: 3px solid $color_red;
+  font-family: gilroy, sans-serif;
+  border-radius: 0;
+
+  .sa-icon {
+    display: none !important;
+  }
+
+  h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 36px;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  button {
+    border-radius: 0 !important;
+    background-color: $color_red !important;
+    color: #fff !important;
+  }
+}

@@ -1,0 +1,18 @@
+.pp-caption {
+  width: 100%;
+  background-color: $color_red;
+  padding: 20px 0;
+
+  &_green {
+    background-color: $color_dark_green;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 auto;
+
+    @include phone{
+      width: 60%;
+    }
+  }
+}

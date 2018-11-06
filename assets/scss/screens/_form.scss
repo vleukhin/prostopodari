@@ -1,0 +1,17 @@
+.pp-screen-form {
+  display: none;
+  background-color: $color_red;
+  text-align: center;
+  padding: 50px 0 79px;
+
+  @include phone {
+    padding: 30px 5%;
+  }
+
+  &__button {
+    display: block;
+    max-width: 370px;
+    margin: 40px auto 0;
+    width: 100%;
+  }
+}

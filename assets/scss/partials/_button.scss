@@ -1,0 +1,42 @@
+.pp-button {
+  $block: &;
+  font-family: gilroy, sans-serif;
+
+  font-size: $font_size;
+  height: 58px;
+  text-transform: uppercase;
+  padding: 0 25px;
+  color: #fff;
+  background-color: $color_red;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  outline: none;
+  border-radius: 0;
+
+  @include phone {
+    font-size: $font_phone_size;
+    height: 40px;
+    padding: 0 10px;
+  }
+
+  &_green {
+    background-color: $color_dark_green;
+    &.pp-button_bordered {
+      border: 3px solid $color_dark_green;
+      color: $color_dark_green;
+
+      @include phone {
+        border-width: 2px;
+      }
+    }
+  }
+
+  &_bordered {
+    background-color: transparent;
+    border: 3px solid #fff;
+    @include phone {
+      border-width: 2px;
+    }
+  }
+}

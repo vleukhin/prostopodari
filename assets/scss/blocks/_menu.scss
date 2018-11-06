@@ -1,0 +1,34 @@
+.pp-menu {
+  display: none;
+  list-style: none;
+  font-size: $font_size;
+  width: 100%;
+  max-width: 307px;
+  margin: 0;
+  padding: 0;
+
+  @include phone {
+    font-size: $font_phone_size;
+  }
+
+  &__item {
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @include phone {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+  }
+}

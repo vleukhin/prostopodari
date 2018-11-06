@@ -1,0 +1,52 @@
+.pp-checkbox {
+  $block: &;
+  $size: 40px;
+  $padding: 3px;
+  $border: 2px;
+
+  $size_phone: 20px;
+  $padding_phone: 2px;
+  $border_phone: 1px;
+
+  padding: $padding;
+  border: $border solid $color_red;
+  width: $size;
+  height: $size;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+
+  @include phone {
+    padding: $padding_phone;
+    border: $border_phone solid $color_red;
+    width: $size_phone;
+    height: $size_phone;
+  }
+
+  &_active {
+    #{$block}__inner {
+      display: block;
+    }
+  }
+
+  &_white {
+    border-color: #fff;
+
+    #{$block}__inner {
+      background-color: #fff;
+    }
+  }
+
+  &__inner {
+    display: none;
+    width: $size - ($border + $padding)*2;
+    height: $size - ($border + $padding)*2;
+    background-color: $color_red;
+
+    @include phone {
+      width: $size_phone - ($border_phone + $padding_phone)*2;
+      height: $size_phone - ($border_phone + $padding_phone)*2;
+    }
+  }
+}
+

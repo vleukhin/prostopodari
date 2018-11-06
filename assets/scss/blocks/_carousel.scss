@@ -1,0 +1,93 @@
+.pp-carousel {
+  font-family: gilroy, sans-serif;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+
+  &__item {
+    outline: none;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-height: 250px;
+      @include phone {
+        max-height: 180px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: $font_size;
+    text-align: center;
+    color: $color_dark_green;
+
+    img {
+      display: inline-block;
+      width: 20px;
+    }
+  }
+
+  &__arrow {
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    border: 3px solid $color_dark_green;
+    border-radius: 50%;
+    line-height: 85px;
+    color: $color_dark_green;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+
+    @include phone {
+      width: 45px;
+      height: 45px;
+      line-height: 41px;
+    }
+
+    &_prev {
+      left: 27%;
+
+      @include phone {
+        left: 10px;
+      }
+    }
+
+    &_next {
+      right: 27%;
+
+      @include phone {
+        right: 10px;
+      }
+    }
+  }
+}
+
+.slick-slide {
+  margin: 0 50px;
+  @include phone {
+    margin: 0;
+  }
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -50px;
+
+  @include phone {
+    margin: 0;
+  }
+}
+
+.slick-active:not(.slick-current) {
+  img {
+    //width: 80%;
+  }
+}

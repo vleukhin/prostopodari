@@ -1,0 +1,127 @@
+.pp-reason {
+  $block: &;
+
+  font-family: gilroy, sans-serif;
+  font-size: $font_size;
+  color: $color_dark_green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+
+  width: 100%;
+  max-width: 700px;
+
+  @include tablet-only {
+    font-size: 28px;
+  }
+
+  @include phone {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  &__body {
+    width: 100%;
+    padding-left: 18px;
+
+    @include tablet-only {
+      padding-left: 100px;
+    }
+    @include phone {
+      padding-left: 15%;
+    }
+
+  }
+
+  &_right-icon {
+
+  }
+
+  &__icon {
+    position: absolute;
+
+    @include tablet-only {
+      max-width: 20%;
+    }
+    @include phone {
+      max-width: 15%;
+    }
+
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+  &__text {
+    line-height: 31px;
+
+    @include phone {
+      line-height: inherit;
+    }
+  }
+
+  &:nth-child(1) {
+    #{$block}__icon {
+      left: -80px;
+      top: -7px;
+    }
+
+    @include phone {
+      #{$block}__icon {
+        max-width: 7%;
+
+        left: 0;
+        top: 7px;
+      }
+    }
+
+    @include tablet-only {
+      #{$block}__icon {
+        left: 10px;
+        top: 7px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    #{$block}__icon {
+      right: -20px;
+      top: -10px;
+    }
+    @include phone {
+      #{$block}__icon {
+        right: 0;
+        top: 0;
+      }
+    }
+    @include tablet-only {
+      #{$block}__icon {
+        right: 25px;
+        top: 0;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    #{$block}__icon {
+      left: -110px;
+      top: -38px;
+    }
+    @include phone {
+      #{$block}__icon {
+        left: -10px;
+        top: 0;
+      }
+    }
+
+    @include tablet-only {
+      #{$block}__icon {
+        left: -20px;
+        top: 7px;
+      }
+    }
+  }
+
+}

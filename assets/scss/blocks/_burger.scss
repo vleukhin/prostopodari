@@ -1,0 +1,59 @@
+.pp-burger {
+  $block: &;
+  $size: 40px;
+  $bar_height: 2px;
+
+  cursor: pointer;
+  float: right;
+  width: $size;
+  height: $size;
+  position: relative;
+  user-select: none;
+  z-index: 1001;
+
+  &_open {
+    #{$block}__one {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    #{$block}__two {
+      width: 0;
+      opacity: 0;
+    }
+
+    #{$block}__three {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: $size * 0.70710678118 /* sin(45)*/;
+    }
+  }
+
+  > * {
+    background: #fff;
+    cursor: pointer;
+    display: block;
+    width: $size;
+    height: $bar_height;
+    opacity: 1;
+    position: absolute;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    transition: .25s ease-in-out;
+  }
+
+  &__one {
+    top: 0;
+    transform-origin: left center;
+  }
+
+  &__two {
+    top: $size/2 - $bar_height/2;
+    transform-origin: left center;
+  }
+
+  &__three {
+    top: $size - $bar_height;
+    transform-origin: left center;
+  }
+}

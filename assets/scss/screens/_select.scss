@@ -1,0 +1,76 @@
+.pp-screen-select {
+  font-family: gilroy, sans-serif;
+  font-size: $font_size;
+  text-align: center;
+  padding-bottom: 60px;
+
+  @include phone {
+    padding-bottom: 0;
+  }
+
+  .pp-caption {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $color_red;
+  }
+
+  &__sizes {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+
+    .pp-size:nth-child(2) {
+      margin: 0 10%;
+    }
+  }
+
+  &__present {
+    margin: 40px 0;
+
+    @include phone {
+      margin: 30px auto 0;
+      max-width: 60%;
+    }
+  }
+
+  &__text {
+    color: $color_dark_green;
+    margin-bottom: 40px;
+  }
+
+  &__separator {
+    height: 60px;
+    width: 3px;
+    background-color: $color_dark_green;
+    display: block;
+    margin: 30px auto;
+  }
+
+  &__price {
+    font-weight: 700;
+    color: $color_dark_green;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .pp-price {
+    margin-left: 50px;
+    top: 12px;
+    height: 54px;
+  }
+
+  .pp-button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 22px;
+
+    @include phone {
+      max-width: 230px;
+    }
+  }
+}
